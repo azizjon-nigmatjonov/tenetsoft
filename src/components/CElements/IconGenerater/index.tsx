@@ -6,9 +6,12 @@ interface Props {
   fill?: any;
 }
 
-export const IconGenerater = memo(({ icon, fill, ...props }: Props) => {
-  const findedIcon = iconsList.find((el) => el.name === icon);
-  if (!findedIcon) return null;
+const IconGenerater = memo(function IconGenerater({ icon, fill, ...props }: Props) {
+  const foundIcon = iconsList.find((el) => el.name === icon);
+  if (!foundIcon) return null;
 
-  return <findedIcon.component fill={fill} {...props} />;
+  const IconComponent = foundIcon.component;
+  return <IconComponent fill={fill} {...props} />;
 });
+
+export default IconGenerater;

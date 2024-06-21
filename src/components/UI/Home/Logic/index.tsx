@@ -35,17 +35,10 @@ export const FetchFunction = () => {
       );
 
       if (found?.name) {
-        oldArr = oldArr.map((item: { name: string }) => {
-          if (item.name === newData.name) {
-            return {
-              ...newData,
-            };
-          } else {
-            return {
-              ...item,
-            };
-          }
-        });
+        oldArr = oldArr.filter(
+          (item: { name: string }) => item.name !== newData.name
+        );
+        oldArr.push(newData);
         setHistoryList(oldArr);
       } else {
         if (oldArr?.length < 5) {
@@ -79,5 +72,18 @@ export const FetchFunction = () => {
     };
   }, [weatherData]);
 
-  return { weatherData: weather, isLoading };
+  const lastData = useMemo(() => {
+    if (weatherData?.grouped || search) return {}
+
+    if (!history_list?.length) return {};
+    const data: any = [...history_list];
+
+    return {
+      ...data[data.length - 1],
+      grouped: data[data.length - 1].list[0] ?? [],
+    };
+  }, [history_list, weatherData, search]);
+
+
+  return { weatherData: weather, isLoading, lastData };
 };

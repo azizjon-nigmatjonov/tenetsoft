@@ -9,6 +9,7 @@ export const globalColors = {
   primary30: "#bcd7ec",
   primary40: "#BBD7EC",
   gray: "#9092a3",
+  gray20: "#4F5658",
   lightGray: "#ebf0fa",
   hover: "#9092a322",
   border: "#39393A",

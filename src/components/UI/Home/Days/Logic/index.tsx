@@ -1,19 +1,4 @@
-const getDayName = (dateStr: string) => {
-  const dateObj = new Date(dateStr);
-
-  const daysOfWeek = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  const dayOfWeekIndex = dateObj.getDay();
-
-  return daysOfWeek[dayOfWeekIndex];
-};
+import { getDayName } from "@/utils/getDayName";
 
 export const DaysData = () => {
   const covertToString = (obj: {}) => {

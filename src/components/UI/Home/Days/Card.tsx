@@ -1,11 +1,17 @@
-import { GetHour } from "@/utils/getTime";
 import { getCurrentImage } from "@/utils/getImage";
+import { getCurrentTime } from "@/utils/getTime";
 
 interface CardProps {
   title: string;
   element: {
     weather: any;
-    main: { temp: number };
+    main: {
+      temp: number;
+      feels_like: number;
+      humidity: number;
+      pressure: number;
+    };
+    wind: any;
   };
 }
 export const Card = ({ title, element }: CardProps) => {
@@ -28,23 +34,48 @@ export const Card = ({ title, element }: CardProps) => {
 };
 
 export const TodayCard = ({ title, element }: CardProps) => {
-  const currentTime = GetHour();
+  const currentTime = getCurrentTime();
+  console.log("currentTime", currentTime);
+
+  console.log("element", element);
 
   return (
-    <div className="rounded-[18px] overflow-hidden">
-      <div className="px-16px py-12px uppercase flex justify-center bg-[var(--primary20)] text-[var(--black)] font-medium">
+    <div className="rounded-[18px] overflow-hidden h-[200px] bg-[var(--primary30)] ">
+      <div className="px-16px py-12px uppercase flex justify-between text-[var(--black)] font-medium bg-[var(--primary20)] ">
         {title}
         <span>{currentTime}</span>
       </div>
-      <div className=" px-16px py-12px flex flex-col items-center bg-[var(--primary30)]">
-        <img
-          src={getCurrentImage(element.weather[0]?.main)}
-          alt={element.weather[0]?.main || "svg"}
-        />
-        <span className="text-2xl mt-10">
-          {" "}
-          {Math.round(element.main.temp - 273.15)}°C
-        </span>
+      <div className="px-16px py-12px flex items-center justify-between text-black">
+        <div>
+          <span className="text-2xl">
+            {Math.round(element.main.temp - 273.15)}°C
+          </span>
+          <ul className="text-sm mt-2">
+            <li>
+              <span className="text-[var(--gray20)] mr-2">Real Feel:</span>
+              <span> {Math.round(element.main.feels_like - 273.15)}°C</span>
+            </li>
+            <li>
+              <span className="text-[var(--gray20)] mr-2">Wind:</span>
+              <span>{Math.round(element.wind.speed * 1.60934)} km-h</span>
+            </li>
+            <li>
+              <span className="text-[var(--gray20)] mr-2">Pressure:</span>
+              <span>{element.main.pressure} MB</span>
+            </li>
+            <li>
+              <span className="text-[var(--gray20)] mr-2">Humidity:</span>
+              <span>{element.main.humidity} %</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <img
+            src={getCurrentImage(element.weather[0]?.main)}
+            alt={element.weather[0]?.main || "svg"}
+          />
+        </div>
       </div>
     </div>
   );
