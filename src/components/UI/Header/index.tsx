@@ -9,10 +9,12 @@ interface Props {
 
 const Header = ({ title }: Props) => {
   return (
-    <div className="container grid grid-cols-3 items-center h-[70px]">
+    <div className="container flex justify-between items-center h-[70px]">
       <Location title={title} />
       <Search />
-      <Profile />
+      <div className="hidden mobile:block">
+        <Profile />
+      </div>
     </div>
   );
 };

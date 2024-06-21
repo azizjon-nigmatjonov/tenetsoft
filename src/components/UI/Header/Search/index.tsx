@@ -7,7 +7,7 @@ export const Search = () => {
   const handleStoreSearch = (val: string) => setSearchValue(val);
   return (
     <div className="flex justify-end">
-      <div className="w-[300px]">
+      <div className="w-[180px] mobile:w-[300px]">
         <SearchInput handleChange={handleStoreSearch} delay={700} />
       </div>
     </div>

@@ -16,7 +16,7 @@ interface CardProps {
 }
 export const Card = ({ title, element }: CardProps) => {
   return (
-    <div className="bg-[var(--black30)] rounded-[18px]">
+    <div className="bg-[var(--black30)] rounded-[18px] h-[200px]">
       <div className="border-b border-[var(--border)] px-16px py-12px uppercase flex justify-center font-medium">
         {title}
       </div>
@@ -35,9 +35,6 @@ export const Card = ({ title, element }: CardProps) => {
 
 export const TodayCard = ({ title, element }: CardProps) => {
   const currentTime = getCurrentTime();
-  console.log("currentTime", currentTime);
-
-  console.log("element", element);
 
   return (
     <div className="rounded-[18px] overflow-hidden h-[200px] bg-[var(--primary30)] ">

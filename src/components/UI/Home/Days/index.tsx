@@ -35,13 +35,13 @@ export const Days = ({ grouped = [], isLoading }: Props) => {
   }
 
   return (
-    <div className="flex items-center mt-10 w-full">
-      <div className="w-[400px]">
+    <div className="flex ipod:items-center mt-10 w-full flex-col ipod:flex-row mb-5">
+      <div className="mobile:w-[400px]">
         {newList?.splice(0, 1)?.map(([key, value]: any) => (
           <TodayCard key={key} title={key} element={value[value.length - 1]} />
         ))}
       </div>
-      <div className="grid grid-cols-4 gap-x-5 ml-5 w-full">
+      <div className="grid grid-cols-2 mobile:grid-cols-4 gap-5 ipod:ml-5 mt-5 ipod:mt-0 w-full">
         {newList?.splice(1)?.map(([key, value]: any) => (
           <Card key={key} title={key} element={value[value.length - 1]} />
         ))}

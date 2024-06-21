@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        minDesktop: "1200px",
+        ipod: "980px",
+        mobile: "768px",
+        small: "540px",
+        extraSmall: "400px",
+      },
       spacing: {
         "0px": "0px",
         px: "1px",
