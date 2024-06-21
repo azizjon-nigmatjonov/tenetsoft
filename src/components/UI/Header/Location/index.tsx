@@ -4,7 +4,7 @@ export const Location = ({ title = "" }) => {
   return (
     <div className="flex items-center space-x-2">
       <LocaitonIcon />
-      <p>{title}</p>
+      <p>{title || 'Location...'}</p>
     </div>
   );
 };

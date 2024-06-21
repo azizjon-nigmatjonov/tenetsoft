@@ -1,3 +1,6 @@
+import { GetHour } from "@/utils/getTime";
+import { getCurrentImage } from "@/utils/getImage";
+
 interface CardProps {
   title: string;
   element: {
@@ -5,18 +8,6 @@ interface CardProps {
     main: { temp: number };
   };
 }
-
-const getImage = (type: string) => {
-  switch (type) {
-    case "Clouds":
-      return "/svg/clouds.svg";
-    case "Rainy":
-      return "/svg/rainy.svg";
-    default:
-      return "/svg/sunny.svg";
-  }
-};
-
 export const Card = ({ title, element }: CardProps) => {
   return (
     <div className="bg-[var(--black30)] rounded-[18px]">
@@ -25,7 +16,7 @@ export const Card = ({ title, element }: CardProps) => {
       </div>
       <div className=" px-16px py-12px flex flex-col items-center">
         <img
-          src={getImage(element.weather[0]?.main)}
+          src={getCurrentImage(element.weather[0]?.main)}
           alt={element.weather[0]?.main || "svg"}
         />
         <span className="text-2xl mt-10">
@@ -37,14 +28,17 @@ export const Card = ({ title, element }: CardProps) => {
 };
 
 export const TodayCard = ({ title, element }: CardProps) => {
+  const currentTime = GetHour();
+
   return (
     <div className="rounded-[18px] overflow-hidden">
       <div className="px-16px py-12px uppercase flex justify-center bg-[var(--primary20)] text-[var(--black)] font-medium">
         {title}
+        <span>{currentTime}</span>
       </div>
       <div className=" px-16px py-12px flex flex-col items-center bg-[var(--primary30)]">
         <img
-          src={getImage(element.weather[0]?.main)}
+          src={getCurrentImage(element.weather[0]?.main)}
           alt={element.weather[0]?.main || "svg"}
         />
         <span className="text-2xl mt-10">
