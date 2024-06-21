@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import "../styles/index.scss";
+import SetUpGlobalColors from "./Logic";
+import muiTheme from "@/theme/mui";
+import { ThemeProvider } from "@emotion/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <ThemeProvider theme={muiTheme}>
+        <body className={inter.className}>{children}</body>
+        <SetUpGlobalColors />
+      </ThemeProvider>
     </html>
   );
 }
