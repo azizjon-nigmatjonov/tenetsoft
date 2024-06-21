@@ -35,7 +35,7 @@ export default function SEO({ title }: Props) {
         key="ogdesc"
       />
       <meta property="og:site_name" content={metaTitle} key="ogsitename" />
-      <meta property="og:image" content="/seo.jpg" key="ogimage" />
+      <meta property="og:image" content="/images/cloud.png" key="ogimage" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={metaTitle} />
       <meta
@@ -44,13 +44,8 @@ export default function SEO({ title }: Props) {
       />
       <meta name="twitter:site" content={metaTitle} />
       <meta name="twitter:creator" content="Mukhammadaziz Nigmatjonov" />
-      <meta name="twitter:image" content="/seo.jpg" />
-
-      <link rel="icon" href="/code.png" />
-      {/* <link
-        href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;600;700&display=swap'
-        rel='stylesheet'
-      /> */}
+      <meta name="twitter:image" content="/images/cloud.png" />
+      <link rel="icon" href="/favicon.ico" />
     </Head>
   );
 }

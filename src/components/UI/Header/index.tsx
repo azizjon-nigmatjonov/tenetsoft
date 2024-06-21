@@ -1,12 +1,16 @@
-"use client"
+"use client";
 import { Location } from "./Location";
 import { Profile } from "./Prifle";
 import { Search } from "./Search";
 
-const Header = () => {
+interface Props {
+  title: string | undefined;
+}
+
+const Header = ({ title }: Props) => {
   return (
-    <div className="container flex justify-between items-center h-[70px]">
-      <Location />
+    <div className="container grid grid-cols-3 items-center h-[70px]">
+      <Location title={title} />
       <Search />
       <Profile />
     </div>

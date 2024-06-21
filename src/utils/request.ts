@@ -5,7 +5,7 @@ import { QueryClient } from "react-query";
 // import { websiteActions } from "store/website/websiteSlice";
 
 export const request = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_BASE_URL,
+  baseURL: "https://api.openweathermap.org/",
 });
 
 interface ErrorResponse {
@@ -52,7 +52,7 @@ request.interceptors.response.use(
       //   })
       // );
     }
-    return response.data?.data;
+    return response.data;
   },
   (error: AxiosError) => errorHandler(error as AxiosError<ErrorResponse>)
 );

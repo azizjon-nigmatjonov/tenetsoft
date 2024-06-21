@@ -30,7 +30,7 @@ const SearchInput = ({
 
   return (
     <div
-      className={`relative bg-[var(--black20)] rounded-[8px] flex justify-center items-center h-[40px] px-5`}
+      className={`relative bg-[var(--black20)] rounded-[12px] flex justify-center items-center h-[40px] px-5`}
     >
       <div className="absolute top-1/2 -translate-y-1/2 left-3">
         <SearchIcon />

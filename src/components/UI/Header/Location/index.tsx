@@ -1,10 +1,10 @@
 import { LocaitonIcon } from "@/components/CElements/IconGenerater/Icons/custom";
 
-export const Location = () => {
+export const Location = ({ title = "" }) => {
   return (
     <div className="flex items-center space-x-2">
       <LocaitonIcon />
-      <p>Dhaka,Bangladesh</p>
+      <p>{title}</p>
     </div>
   );
 };

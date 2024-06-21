@@ -2,3 +2,38 @@
     padding: 0 22px;
     margin: 0 auto;
 }
+
+.custom-btn,
+.success-btn,
+.cancel-btn,
+.new-btn {
+  background-color: var(--primary40);
+  color: white;
+  text-transform: none;
+  border-radius: 8px;
+  height: 40px;
+  padding: 0 20px;
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 500;
+  @include center-center;
+  position: relative;
+
+  &.form {
+    height: 52px;
+  }
+
+  .MuiCircularProgress-root {
+    margin-right: 16px;
+
+    svg {
+      color: white;
+    }
+  }
+
+  &.disabled {
+    background-color: var(--gray20);
+    color: var(--black);
+  }
+}

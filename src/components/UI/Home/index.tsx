@@ -1,6 +1,19 @@
-import cls from './style.module.scss'
+"use client";
+import Header from "../Header";
+import { Days } from "./Days";
+import { FetchFunction } from "./Logic";
+import cls from "./style.module.scss";
 const HomePage = () => {
-    return <div className={`${cls.wrapper} container`}>home page</div>
-}
+  const { weatherData, isLoading } = FetchFunction();
 
-export default HomePage
+  return (
+    <>
+      <Header title={weatherData?.city?.name} />
+      <div className={`${cls.wrapper} container`}>
+        <Days grouped={weatherData?.grouped ?? []} />
+      </div>
+    </>
+  );
+};
+
+export default HomePage;
