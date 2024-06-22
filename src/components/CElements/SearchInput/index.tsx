@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import useDebounce from "../../../hooks/useDebounce";
 import { SearchIcon } from "../IconGenerater/Icons/custom";
+import { TextField } from "@mui/material";
+import "./style.scss";
 
 interface Props {
   delay?: number;
@@ -20,7 +22,6 @@ const SearchInput = ({
   const [value, setValue] = useState<any>(null);
 
   const debounce = useDebounce((search: string) => {
-    setValue(search);
     handleChange(search);
   }, delay);
 
@@ -30,17 +31,20 @@ const SearchInput = ({
 
   return (
     <div
-      className={`relative bg-[var(--black20)] rounded-[8px] flex justify-center items-center h-[40px] px-5`}
+      className={`relative bg-[var(--black20)] rounded-[8px] flex justify-center items-center h-[40px] px-5 pl-12 csearchinput`}
     >
       <div className="absolute top-1/2 -translate-y-1/2 left-3">
         <SearchIcon />
       </div>
-      <input
-        onChange={(e) => debounce(e.target.value)}
-        defaultValue={defaultValue}
+      <TextField
+        size="small"
+        value={value}
+        onChange={(e) => {
+          setValue(e.target.value);
+          debounce(e.target.value);
+        }}
         type="text"
-        placeholder="Qidiruv..."
-        className={`w-full bg-transparent h-full outline-none pl-5 pr-5 rounded-[8px] ${classes}`}
+        className={classes}
       />
     </div>
   );

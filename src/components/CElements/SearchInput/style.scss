@@ -1,0 +1,32 @@
+.csearchinput {
+  .MuiFormControl-root {    
+    width: 100%;
+    .MuiInputBase-root {
+      height: 100%;
+      border: none;
+      color: white;
+      width: 100%;
+
+      input {
+        padding: 0;
+        height: 100%;
+      }
+
+      fieldset {
+        border: none;
+      }
+
+      &.Mui-focused {
+        .MuiOutlinedInput-notchedOutline {
+          border: none;
+          outline: none;
+        }
+        outline: 1.5px solid var(--main);
+      }
+
+      .Mui-disabled {
+        background-color: var(--gray);
+      }
+    }
+  }
+}
