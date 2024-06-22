@@ -5,7 +5,6 @@ import { CityData } from "./Logic";
 
 export const CityWrapper = ({ id = "" }) => {
   const { newList } = CityData({ id });
-  console.log('newList', newList);
   
   return (
     <div className="container">

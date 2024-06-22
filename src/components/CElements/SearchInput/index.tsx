@@ -9,7 +9,7 @@ import "./style.scss";
 interface Props {
   delay?: number;
   classes?: string;
-  defaultValue?: string | number;
+  defaultValue?: string;
   handleChange: (val: string) => void;
 }
 
@@ -19,7 +19,7 @@ const SearchInput = ({
   defaultValue = "",
   handleChange = () => {},
 }: Props) => {
-  const [value, setValue] = useState<any>(null);
+  const [value, setValue] = useState<string>("");
 
   const debounce = useDebounce((search: string) => {
     handleChange(search);
