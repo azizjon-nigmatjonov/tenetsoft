@@ -1,8 +1,8 @@
 "use client";
 import { ReactNode } from "react";
 import { Location } from "./Location";
-import { Profile } from "./Prifle";
 import { Search } from "./Search";
+import { Profile } from "./Profile";
 
 interface Props {
   title: string | undefined;

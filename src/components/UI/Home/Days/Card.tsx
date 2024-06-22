@@ -1,5 +1,6 @@
 import { getCurrentImage } from "@/utils/getImage";
 import { getCurrentTime } from "@/utils/getTime";
+import Image from "next/image";
 
 interface CardProps {
   title: string;
@@ -21,7 +22,9 @@ export const Card = ({ title, element }: CardProps) => {
         {title}
       </div>
       <div className=" px-16px py-12px flex flex-col items-center">
-        <img
+        <Image
+          width={44}
+          height={44}
           src={getCurrentImage(element.weather[0]?.main)}
           alt={element.weather[0]?.main || "svg"}
         />
@@ -68,7 +71,9 @@ export const TodayCard = ({ title, element }: CardProps) => {
         </div>
 
         <div>
-          <img
+          <Image
+            width={60}
+            height={60}
             src={getCurrentImage(element.weather[0]?.main)}
             alt={element.weather[0]?.main || "svg"}
           />

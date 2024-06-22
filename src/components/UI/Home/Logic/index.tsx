@@ -2,7 +2,7 @@
 import weatherService from "@/services/Weather";
 import { useSearchHistory } from "@/store/history";
 import { useSearch } from "@/store/search";
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import { UseQueryResult, useQuery } from "react-query";
 
 export const FetchFunction = () => {
@@ -19,7 +19,7 @@ export const FetchFunction = () => {
     }
   );
 
-  const storeList = (obj: {}, weather: any) => {
+  const storeList = useCallback((obj: {}, weather: any) => {
     let newData = {
       name: weather.city.name,
       country: weather.city.country,
@@ -51,7 +51,7 @@ export const FetchFunction = () => {
     } else {
       setHistoryList([newData]);
     }
-  };
+  }, [history_list, setHistoryList]);
 
   const weather = useMemo(() => {
     const grouped: { [key: string]: any[] } = {};
@@ -70,10 +70,10 @@ export const FetchFunction = () => {
       ...weatherData,
       grouped,
     };
-  }, [weatherData]);
+  }, [weatherData, storeList]);
 
   const lastData = useMemo(() => {
-    if (weatherData?.grouped || search) return {}
+    if (weatherData?.grouped || search) return {};
 
     if (!history_list?.length) return {};
     const data: any = [...history_list];
@@ -83,7 +83,6 @@ export const FetchFunction = () => {
       grouped: data[data.length - 1].list[0] ?? [],
     };
   }, [history_list, weatherData, search]);
-
 
   return { weatherData: weather, isLoading, lastData };
 };

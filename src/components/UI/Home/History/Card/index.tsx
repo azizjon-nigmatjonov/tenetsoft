@@ -1,6 +1,7 @@
 "use client";
 
 import { getCurrentImage } from "@/utils/getImage";
+import Image from "next/image";
 import Link from "next/link";
 
 interface CardProps {
@@ -9,12 +10,6 @@ interface CardProps {
 }
 
 export const Card = ({ title, element }: CardProps) => {
-  // const router = useRouter();
-
-  // const handleClick = () => {
-  //   router.push(`/history/${title}`);
-  // };
-
   return (
     <Link href={`/city/${title}`}>
       <div className="bg-[var(--black30)] rounded-[18px] px-16px py-12px flex justify-between items-center cursor-pointer">
@@ -24,8 +19,9 @@ export const Card = ({ title, element }: CardProps) => {
           <p className="text-sm">{element.weather}</p>
         </div>
         <div>
-          <img
+          <Image
             width={70}
+            height={70}
             src={getCurrentImage(element.weathe)}
             alt={element.weather || "svg"}
           />

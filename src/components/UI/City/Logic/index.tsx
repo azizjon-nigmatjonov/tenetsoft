@@ -33,7 +33,7 @@ export const CityData = ({ id = "" }) => {
     });
 
     return Object.entries(newObj);
-  }, [history_list]);
+  }, [history_list, id]);
 
   return { newList };
 };
