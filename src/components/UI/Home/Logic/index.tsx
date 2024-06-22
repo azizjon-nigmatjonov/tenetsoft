@@ -19,7 +19,7 @@ export const FetchFunction = () => {
     }
   );
 
-  const storeList = useCallback((obj: {}, weather: any) => {
+  const storeList = (obj: {}, weather: any) => {
     let newData = {
       name: weather.city.name,
       country: weather.city.country,
@@ -39,19 +39,20 @@ export const FetchFunction = () => {
           (item: { name: string }) => item.name !== newData.name
         );
         oldArr.push(newData);
-        setHistoryList(oldArr);
       } else {
         if (oldArr?.length < 5) {
-          setHistoryList([...oldArr, newData]);
+          oldArr.push(newData);
         } else {
-          oldArr = oldArr.splice(1);
-          setHistoryList([...oldArr, newData]);
+          oldArr.shift()
+          oldArr.push(newData);
         }
       }
     } else {
-      setHistoryList([newData]);
+      oldArr = [newData];
     }
-  }, [history_list, setHistoryList]);
+
+    setHistoryList(oldArr);
+  };
 
   const weather = useMemo(() => {
     const grouped: { [key: string]: any[] } = {};
@@ -62,15 +63,16 @@ export const FetchFunction = () => {
       if (date in grouped) {
         grouped[date].push(element);
       } else {
-        grouped[date] = [];
+        grouped[date] = [element];
       }
     });
+
     storeList(grouped, weatherData);
     return {
       ...weatherData,
       grouped,
     };
-  }, [weatherData, storeList]);
+  }, [weatherData]);
 
   const lastData = useMemo(() => {
     if (weatherData?.grouped || search) return {};

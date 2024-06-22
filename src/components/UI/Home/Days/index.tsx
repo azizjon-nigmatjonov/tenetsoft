@@ -29,7 +29,7 @@ export const Days = ({ grouped = [], isLoading }: Props) => {
   if (!newList?.length) {
     return (
       <div className="h-[200px] flex flex-col items-center mt-10">
-        <Image width={150} height={150} src="/images/no-data.png" alt="no data" />
+        <Image width={150} height={150} src="/images/cloud.png" alt="no data" />
         <h3 className="mt-5">Please search for a city to get info</h3>
       </div>
     );

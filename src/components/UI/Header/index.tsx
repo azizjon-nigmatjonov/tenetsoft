@@ -2,7 +2,7 @@
 import { ReactNode } from "react";
 import { Location } from "./Location";
 import { Search } from "./Search";
-import { Profile } from "./Profile";
+// import { Profile } from "./Profile";
 
 interface Props {
   title: string | undefined;
@@ -18,9 +18,9 @@ const Header = ({ title, search = true, children }: Props) => {
         {children}
       </div>
       {search && <Search />}
-      <div className="hidden mobile:block">
+      {/* <div className="hidden mobile:block">
         <Profile />
-      </div>
+      </div> */}
     </div>
   );
 };
