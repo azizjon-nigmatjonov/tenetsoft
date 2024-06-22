@@ -44,7 +44,7 @@ export const Days = ({ grouped = [], isLoading }: Props) => {
       <div className="ipod:hidden">
         <LineChart data={currentData?.length ? currentData : newList?.[0]} />
       </div>
-      <div className="mt-5 ipod:mt-0">
+      <div className="mt-14 ipod:mt-0">
         {newList?.splice(0, 1)?.map(([key, value]: any) => (
           <div
             key={key}

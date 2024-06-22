@@ -3,13 +3,19 @@
 import { ResponsiveLine } from "@nivo/line";
 import { LineChartData } from "./Logic";
 
-const LineChart = ({ data = [] }: { data: any }) => {
+const LineChart = ({
+  data = [],
+  classes,
+}: {
+  data: any;
+  classes?: string;
+}) => {
   if (!data?.length) return <></>;
   const { lineData } = LineChartData({
     currentData: data,
   });
   return (
-    <div className="h-[200px] w-full ipod:w-[320px] text-center">
+    <div className={`h-[200px] text-center w-full ipod:w-[340px] ${classes}`}>
       <h3>Hourly forecast</h3>
       <ResponsiveLine
         data={lineData}
@@ -28,7 +34,7 @@ const LineChart = ({ data = [] }: { data: any }) => {
         axisRight={null}
         axisBottom={{
           tickSize: 0,
-          tickPadding: 6,
+          tickPadding: 10,
           tickRotation: 0,
           legend: "",
           legendOffset: -60,
