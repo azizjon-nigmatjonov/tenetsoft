@@ -2,7 +2,7 @@
 import weatherService from "@/services/Weather";
 import { useSearchHistory } from "@/store/history";
 import { useSearch } from "@/store/search";
-import { useCallback, useMemo } from "react";
+import { useMemo } from "react";
 import { UseQueryResult, useQuery } from "react-query";
 
 export const FetchFunction = () => {

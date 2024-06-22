@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Name
 
-## Getting Started
+Weather-app
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Weather-app is a forecase website that shows information about any city you want. It provides hourly info also.
+
+## Features
+
+- Feature 1: search for ant city in the world
+- Feature 2: 5 days weather info
+- Feature 3: store 5 last searches
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- Node.js (v16.x or higher)
+- npm (v6.x or higher) or Yarn (v1.x or higher)
+
+### 4. Project Structure
+
+myproject/
+├── public/ # Static assets
+├── src/
+│ ├── components/ # Reusable components
+│ ├── app/ # Next.js pages
+│ ├── styles/ # CSS/Sass files
+│ ├── utils/ # Utility functions
+│ ├── services/ # API service files
+│ └── store/ # State management
+│ └── constants/ # Constant variables
+│ └── hooks/ # Custom hooks
+├── .env # Environment variables
+├── next.config.js # Next.js configuration
+├── package.json # Project metadata and scripts
+└── README.md # Project documentation
+
+### 5. Usage
+
+When you enter to the Home page there is a search bar to search any city weather
+By clicking the card you can get Hourly forecast of the city
+By clicking 5 last searched cards you will be navigate to the city information page
+
+```markdown
+## Usage
+
+### Navigating the Application
+
+- Home Page: The home page provides an overview of 5 days weather info with each day hourly forecast.
+- Search Functionality: Users can search for any city weather they want
+- User Profiles: In the future I'm planing to make profile page for each user
+
+### Components
+
+- `Header`: The header component is used for search bar and profile info and others...
+- `History component`: The history component is used for saving your last searches and you can check the searches at any time
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

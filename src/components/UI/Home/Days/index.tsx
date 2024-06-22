@@ -1,7 +1,6 @@
 import { OneSkeleton } from "@/components/CElements/Skeleton/OneSkeleton";
 import { Card, TodayCard } from "./Card";
 import { DaysData } from "./Logic";
-import { ListSkeleton } from "@/components/CElements/Skeleton/ListSkeleton";
 import Image from "next/image";
 
 interface Props {
@@ -39,12 +38,12 @@ export const Days = ({ grouped = [], isLoading }: Props) => {
     <div className="flex ipod:items-center mt-10 w-full flex-col ipod:flex-row mb-5">
       <div className="mobile:w-[400px]">
         {newList?.splice(0, 1)?.map(([key, value]: any) => (
-          <TodayCard key={key} title={key} element={value[value.length - 1]} />
+          <TodayCard key={key} title={key} element={value[0]} />
         ))}
       </div>
       <div className="grid grid-cols-2 mobile:grid-cols-4 gap-5 ipod:ml-5 mt-5 ipod:mt-0 w-full">
         {newList?.splice(1)?.map(([key, value]: any) => (
-          <Card key={key} title={key} element={value[value.length - 1]} />
+          <Card key={key} title={key} element={value[0]} />
         ))}
       </div>
     </div>
