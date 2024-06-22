@@ -5,7 +5,7 @@ import { Card, TodayCard } from "./Card";
 import { DaysData, LineChartData } from "./Logic";
 import Image from "next/image";
 import LineChart from "./LineChart";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 interface Props {
   grouped: {};
@@ -15,8 +15,13 @@ interface Props {
 export const Days = ({ grouped = [], isLoading }: Props) => {
   const { covertToString } = DaysData();
   const newList = covertToString(grouped);
-  const [currentData, setCurrentData]: any = useState(newList[0] || []);
+  
+  const [currentData, setCurrentData]: any = useState([]);
   const { lineData } = LineChartData({ currentData });
+
+  useEffect(() => {
+    if (newList?.length) setCurrentData([...newList[0]])
+  }, [newList])
 
   if (isLoading) {
     return (
@@ -47,7 +52,11 @@ export const Days = ({ grouped = [], isLoading }: Props) => {
       </div>
       <div className="mobile:w-[400px] mt-5 ipod:mt-0">
         {newList?.splice(0, 1)?.map(([key, value]: any) => (
-          <div key={key} onClick={() => setCurrentData([key, value])}>
+          <div
+            key={key}
+            onClick={() => setCurrentData([key, value])}
+            className="cursor-pointer"
+          >
             <TodayCard title={key} element={value[0]} />
           </div>
         ))}
@@ -55,7 +64,11 @@ export const Days = ({ grouped = [], isLoading }: Props) => {
 
       <div className="grid grid-cols-2 mobile:grid-cols-4 gap-5 ipod:ml-5 mt-5 ipod:mt-0 w-full">
         {newList?.splice(1)?.map(([key, value]: any) => (
-          <div key={key} onClick={() => setCurrentData([key, value])}>
+          <div
+            key={key}
+            onClick={() => setCurrentData([key, value])}
+            className="cursor-pointer"
+          >
             <Card title={key} element={value[0]} />
           </div>
         ))}
