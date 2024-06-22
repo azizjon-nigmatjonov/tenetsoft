@@ -8,7 +8,7 @@ const HistoryUI = () => {
 
   return (
     <div className="mt-14">
-      <h2 className="text-lg">Last 5 search overview</h2>
+      <h2 className="text-lg">Last 1-5 search overview</h2>
 
       <div className="grid grid-cols-1 mobile:grid-cols-3 ipod:grid-cols-5 gap-5 mt-5">
         {history_list?.map((item: { name: string }) => (
