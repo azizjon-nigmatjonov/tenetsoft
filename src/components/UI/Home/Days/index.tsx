@@ -1,7 +1,11 @@
+"use client";
+
 import { OneSkeleton } from "@/components/CElements/Skeleton/OneSkeleton";
 import { Card, TodayCard } from "./Card";
-import { DaysData } from "./Logic";
+import { DaysData, LineChartData } from "./Logic";
 import Image from "next/image";
+import LineChart from "./LineChart";
+import { useMemo, useState } from "react";
 
 interface Props {
   grouped: {};
@@ -11,6 +15,8 @@ interface Props {
 export const Days = ({ grouped = [], isLoading }: Props) => {
   const { covertToString } = DaysData();
   const newList = covertToString(grouped);
+  const [currentData, setCurrentData]: any = useState(newList[0] || []);
+  const { lineData } = LineChartData({ currentData });
 
   if (isLoading) {
     return (
@@ -19,7 +25,7 @@ export const Days = ({ grouped = [], isLoading }: Props) => {
           <OneSkeleton height={200} />
         </div>
         <div className="w-full ml-5">
-        <OneSkeleton height={200} />
+          <OneSkeleton height={200} />
         </div>
       </div>
     );
@@ -36,15 +42,26 @@ export const Days = ({ grouped = [], isLoading }: Props) => {
 
   return (
     <div className="flex ipod:items-center mt-10 w-full flex-col ipod:flex-row mb-5">
-      <div className="mobile:w-[400px]">
+      <div className="ipod:hidden">
+        <LineChart data={lineData} />
+      </div>
+      <div className="mobile:w-[400px] mt-5 ipod:mt-0">
         {newList?.splice(0, 1)?.map(([key, value]: any) => (
-          <TodayCard key={key} title={key} element={value[0]} />
+          <div key={key} onClick={() => setCurrentData([key, value])}>
+            <TodayCard title={key} element={value[0]} />
+          </div>
         ))}
       </div>
+
       <div className="grid grid-cols-2 mobile:grid-cols-4 gap-5 ipod:ml-5 mt-5 ipod:mt-0 w-full">
         {newList?.splice(1)?.map(([key, value]: any) => (
-          <Card key={key} title={key} element={value[0]} />
+          <div key={key} onClick={() => setCurrentData([key, value])}>
+            <Card title={key} element={value[0]} />
+          </div>
         ))}
+      </div>
+      <div className="hidden ipod:block">
+        <LineChart data={lineData} />
       </div>
     </div>
   );

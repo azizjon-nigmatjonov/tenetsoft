@@ -5,3 +5,6 @@ export const getCurrentTime = () => {
   return `${hours}:${minutes}`;
 };
 
+export const getCustomTime = (time: string) => {
+  return time.substring(time.indexOf(" "))
+}
