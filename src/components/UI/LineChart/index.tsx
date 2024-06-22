@@ -1,14 +1,18 @@
 "use client";
 
 import { ResponsiveLine } from "@nivo/line";
+import { LineChartData } from "./Logic";
 
 const LineChart = ({ data = [] }: { data: any }) => {
-  if (!data?.length) return <></>
+  if (!data?.length) return <></>;
+  const { lineData } = LineChartData({
+    currentData: data,
+  });
   return (
     <div className="h-[200px] w-full ipod:w-[320px] text-center">
       <h3>Hourly forecast</h3>
       <ResponsiveLine
-        data={data}
+        data={lineData}
         margin={{ top: 10, right: 20, bottom: 20, left: 50 }}
         colors={["#AECADF"]}
         xScale={{ type: "point" }}

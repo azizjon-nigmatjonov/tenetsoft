@@ -2,9 +2,9 @@
 
 import { OneSkeleton } from "@/components/CElements/Skeleton/OneSkeleton";
 import { Card, TodayCard } from "./Card";
-import { DaysData, LineChartData } from "./Logic";
+import { DaysData } from "./Logic";
 import Image from "next/image";
-import LineChart from "./LineChart";
+import LineChart from "../../LineChart";
 import { useState } from "react";
 
 interface Props {
@@ -16,9 +16,6 @@ export const Days = ({ grouped = [], isLoading }: Props) => {
   const { covertToString } = DaysData();
   const newList = covertToString(grouped);
   const [currentData, setCurrentData]: any = useState([]);
-  const { lineData } = LineChartData({
-    currentData: currentData?.length ? currentData : newList?.[0],
-  });
 
   if (isLoading) {
     return (
@@ -45,7 +42,7 @@ export const Days = ({ grouped = [], isLoading }: Props) => {
   return (
     <div className="flex ipod:items-center mt-10 w-full flex-col ipod:flex-row mb-5">
       <div className="ipod:hidden">
-        <LineChart data={lineData} />
+        <LineChart data={currentData?.length ? currentData : newList?.[0]} />
       </div>
       <div className="mt-5 ipod:mt-0">
         {newList?.splice(0, 1)?.map(([key, value]: any) => (
@@ -71,7 +68,7 @@ export const Days = ({ grouped = [], isLoading }: Props) => {
         ))}
       </div>
       <div className="hidden ipod:block">
-        <LineChart data={lineData} />
+        <LineChart data={currentData?.length ? currentData : newList?.[0]} />
       </div>
     </div>
   );
