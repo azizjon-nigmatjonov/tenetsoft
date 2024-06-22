@@ -3,8 +3,9 @@
 import { ResponsiveLine } from "@nivo/line";
 
 const LineChart = ({ data = [] }: { data: any }) => {
+  if (!data?.length) return <></>
   return (
-    <div className="h-[200px] w-full ipod:w-[400px] text-center">
+    <div className="h-[200px] w-full ipod:w-[320px] text-center">
       <h3>Hourly forecast</h3>
       <ResponsiveLine
         data={data}

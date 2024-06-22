@@ -5,7 +5,7 @@ import { Card, TodayCard } from "./Card";
 import { DaysData, LineChartData } from "./Logic";
 import Image from "next/image";
 import LineChart from "./LineChart";
-import { useEffect, useMemo, useState } from "react";
+import { useState } from "react";
 
 interface Props {
   grouped: {};
@@ -15,13 +15,10 @@ interface Props {
 export const Days = ({ grouped = [], isLoading }: Props) => {
   const { covertToString } = DaysData();
   const newList = covertToString(grouped);
-  
   const [currentData, setCurrentData]: any = useState([]);
-  const { lineData } = LineChartData({ currentData });
-
-  useEffect(() => {
-    if (newList?.length) setCurrentData([...newList[0]])
-  }, [newList])
+  const { lineData } = LineChartData({
+    currentData: currentData?.length ? currentData : newList?.[0],
+  });
 
   if (isLoading) {
     return (
@@ -50,12 +47,12 @@ export const Days = ({ grouped = [], isLoading }: Props) => {
       <div className="ipod:hidden">
         <LineChart data={lineData} />
       </div>
-      <div className="mobile:w-[400px] mt-5 ipod:mt-0">
+      <div className="mt-5 ipod:mt-0">
         {newList?.splice(0, 1)?.map(([key, value]: any) => (
           <div
             key={key}
             onClick={() => setCurrentData([key, value])}
-            className="cursor-pointer"
+            className="cursor-pointer mobile:w-[260px]"
           >
             <TodayCard title={key} element={value[0]} />
           </div>

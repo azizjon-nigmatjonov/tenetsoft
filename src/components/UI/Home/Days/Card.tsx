@@ -23,8 +23,8 @@ export const Card = ({ title, element }: CardProps) => {
       </div>
       <div className=" px-16px py-12px flex flex-col items-center">
         <Image
-          width={44}
-          height={44}
+          width={40}
+          height={40}
           src={getCurrentImage(element.weather[0]?.main)}
           alt={element.weather[0]?.main || "svg"}
         />
@@ -40,7 +40,7 @@ export const TodayCard = ({ title, element }: CardProps) => {
   const currentTime = getCurrentTime();
 
   return (
-    <div className="rounded-[18px] overflow-hidden h-[200px] bg-[var(--primary30)] ">
+    <div className="rounded-[18px] overflow-hidden h-[200px] bg-[var(--primary30)]">
       <div className="px-16px py-12px uppercase flex justify-between text-[var(--black)] font-medium bg-[var(--primary20)] ">
         {title}
         <span>{currentTime}</span>
