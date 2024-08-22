@@ -1,4 +1,5 @@
 "use client";
+import { ContactUI } from "../Contact";
 import { FooterUI } from "../Footer";
 import Header from "../Header";
 import { Banner } from "./Banner";
@@ -18,6 +19,8 @@ const HomePage = () => {
       <Team />
 
       <Services />
+
+      <ContactUI />
 
       <FooterUI />
     </>

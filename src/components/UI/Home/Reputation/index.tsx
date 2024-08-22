@@ -1,7 +1,7 @@
 export const Reputation = () => {
   return (
     <div className="container">
-      <h2 className="section-title">Our Reputation</h2>
+      <h2 className="section-title px-20">Our Reputation</h2>
 
       <div className="grid grid-cols-3 gap-x-10 mt-10 px-20 mb-20">
         <div className="border border-[var(--border)] p-5 rounded-[8px]">
