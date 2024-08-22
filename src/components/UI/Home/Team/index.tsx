@@ -2,8 +2,8 @@ export const Team = () => {
   return (
     <div className="bg-[var(--gray20)]">
       <div className="container">
-        <div className="py-20 flex justify-between px-20">
-          <div className="w-1/2">
+        <div className="py-20 flex justify-between lg:px-20 flex-col md:flow-row">
+          <div className="md:w-1/2">
             <h4 className="section-title" style={{ textAlign: "start" }}>
               Team
             </h4>
@@ -13,7 +13,7 @@ export const Team = () => {
               Frontend developers.
             </p>
           </div>
-          <img className="h-[50vh]" src="/images/team.png" alt="team" />
+          <img className="h-[50vh] mt-10 md:mt-0" src="/images/team.png" alt="team" />
         </div>
       </div>
     </div>

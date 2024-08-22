@@ -3,8 +3,8 @@ export const Services = () => {
   return (
     <div>
       <div className="container">
-        <h2 className="section-title mt-20 px-20">Services</h2>
-        <div className="grid grid-cols-3 gap-14 mt-10 mx-20 pb-20">
+        <h2 className="section-title mt-20 lg:px-20">Services</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-14 mt-10 lg:mx-20 pb-20">
           <div className="rounded-[8px] border border-[var(--border)] shadow-md flex items-center justify-center flex-col py-8 px-8">
             <img className="w-[70px]" src="/images/webservice.png" alt="web" />
             <h5 className="text-xl font-semibold mt-3">Web Developement</h5>

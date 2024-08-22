@@ -5,7 +5,7 @@ interface Props {
 export const Banner = ({ handleScroll }: Props) => {
   return (
     <div className="container">
-      <div className="pt-[190px] pb-[210px] flex items-center justify-between px-20">
+      <div className="pt-[190px] pb-[210px] flex items-center justify-between lg:px-20">
         <div>
           <h1 className="text-[45px] font-semibold leading-[60px]">
             IT-Outsourcing Company
@@ -18,7 +18,7 @@ export const Banner = ({ handleScroll }: Props) => {
             Contact Us
           </button>
         </div>
-        <div className="h-[50vh]">
+        <div className="h-[50vh] hidden md:block">
           <img src="/images/web.jpg" alt="company" className="h-full" />
         </div>
       </div>
