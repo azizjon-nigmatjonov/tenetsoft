@@ -1,13 +1,28 @@
 .container {
     padding: 0 22px;
     margin: 0 auto;
+    max-width: 1302px;
+}
+
+.submit-btn {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--main);
+  text-align: center;
 }
 
 .custom-btn,
 .success-btn,
 .cancel-btn,
 .new-btn {
-  background-color: var(--primary40);
+  background-color: var(--primary);
   color: white;
   text-transform: none;
   border-radius: 8px;

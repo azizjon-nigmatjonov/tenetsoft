@@ -1,26 +1,13 @@
 "use client";
-import { ReactNode } from "react";
-import { Location } from "./Location";
-import { Search } from "./Search";
-// import { Profile } from "./Profile";
 
-interface Props {
-  title: string | undefined;
-  search?: boolean;
-  children?: ReactNode;
-}
-
-const Header = ({ title, search = true, children }: Props) => {
+const Header = () => {
   return (
-    <div className="container flex justify-between items-center h-[70px]">
-      <div className="flex items-center space-x-5">
-        <Location title={title} />
-        {children}
+    <div className="border-b border-[var(--border)] fixed top-0 w-full bg-white">
+      <div className="container flex justify-between items-center h-[70px]">
+        <button>
+          <img src="/svg/logo.png" alt="logo" />
+        </button>
       </div>
-      {search && <Search />}
-      {/* <div className="hidden mobile:block">
-        <Profile />
-      </div> */}
     </div>
   );
 };
