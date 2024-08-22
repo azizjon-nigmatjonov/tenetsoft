@@ -4,11 +4,11 @@ export const ContactUI = ({ ContactRef }: { ContactRef: any }) => {
   return (
     <div className="container" ref={ContactRef}>
       <h2 className="section-title mt-20 lg:px-20 mb-10">Contact</h2>
-      <div className="lg:px-20">
+      <div className="lg:px-20 pb-20">
         <div className="md:p-10 md:border border-[var(--border)] rounded-[12px] md:shadow-lg">
           <p className="text-xl font-semibold mb-2">Do You Have An Idea To Realize? <br /> Let’s Discuss About It! <br /></p>
           <p className="mb-5 font-medium">Leave us your contact we will reach you</p>
-          <div className="flex justify-between pb-20 md:space-x-20 flex-col md:flex-row">
+          <div className="flex justify-between md:space-x-20 flex-col md:flex-row">
             <div className="md:w-1/2 border border-[var(--border)] rounded-[12px] shadow-lg p-10 md:border-none md:shadow-none md:p-0">
               <Form />
             </div>
