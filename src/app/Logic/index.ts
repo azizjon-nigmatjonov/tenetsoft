@@ -4,7 +4,7 @@ import { globalColors } from "@/contants/colors";
 import { memo, useCallback, useEffect } from "react";
 
 type GlobalColorsKeys = keyof typeof globalColors;
-
+``
 const SetUpGlobalColors: React.FC = memo(function SetUpGlobalColors() {
   const setUpColors = useCallback(() => {
     Object.keys(globalColors).forEach((key) => {
