@@ -5,7 +5,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import getMuiTheme from "../theme/mui";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import '../../public/fonts/stylesheet.css'
+import "../../public/fonts/stylesheet.css";
 import "../styles/index.scss";
 import SetUpGlobalColors from "./Logic";
 import { QueryClientProvider } from "react-query";

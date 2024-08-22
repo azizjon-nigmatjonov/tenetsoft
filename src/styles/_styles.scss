@@ -18,6 +18,15 @@
   // text-align: center;
 }
 
+.form-input {
+  border: 1px solid #E0E3EB !important;
+  border-radius: 4px;
+  outline: none;
+  padding: 8px 16px;
+  height: 50px;
+  width: 100%;
+}
+
 .custom-btn,
 .success-btn,
 .cancel-btn,
@@ -51,4 +60,20 @@
     background-color: var(--gray20);
     color: var(--black);
   }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove default styling in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Optionally: Remove appearance in Safari to make it consistent */
+input[type="number"] {
+  -webkit-appearance: none;
 }

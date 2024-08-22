@@ -21,7 +21,7 @@ export const Services = () => {
           </div>
 
           <div className="rounded-[8px] border border-[var(--border)] shadow-md flex items-center justify-center flex-col py-8 px-8">
-            <img className="w-[70px]" src="/images/ux.svg" alt="ux/ui" />
+            <img className="w-[70px]" src="/images/search.svg" alt="ux/ui" />
             <h5 className="text-xl font-semibold">UX/UI Design</h5>
           </div>
 

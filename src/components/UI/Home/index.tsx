@@ -1,4 +1,5 @@
 "use client";
+import { useRef } from "react";
 import { ContactUI } from "../Contact";
 import { FooterUI } from "../Footer";
 import Header from "../Header";
@@ -8,11 +9,22 @@ import { Services } from "./Services";
 import { Team } from "./Team";
 
 const HomePage = () => {
+  const ContactRef: any = useRef(null);
+  const handleScroll = (position: string) => {
+    if (position === "contact") {
+      const element = ContactRef.current.getBoundingClientRect();
+
+      window.scrollTo({
+        top: element.top,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <>
-      <Header />
+      <Header handleScroll={handleScroll} />
 
-      <Banner />
+      <Banner handleScroll={handleScroll} />
 
       <Reputation />
 
@@ -20,7 +32,7 @@ const HomePage = () => {
 
       <Services />
 
-      <ContactUI />
+      <ContactUI ContactRef={ContactRef} />
 
       <FooterUI />
     </>
