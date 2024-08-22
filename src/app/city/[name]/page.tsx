@@ -18,7 +18,7 @@ const City = ({ params }: CityProps) => {
   return (
     <>
       <SEO title={params.name} />
-      <Header title={params.name} search={false}></Header>
+      <Header></Header>
       <div className="container">
         <CBreadcrumbs items={breadcrumbs} withDefautlIcon={true} />
       </div>

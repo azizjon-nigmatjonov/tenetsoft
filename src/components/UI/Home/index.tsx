@@ -1,4 +1,5 @@
 "use client";
+import { FooterUI } from "../Footer";
 import Header from "../Header";
 import { Banner } from "./Banner";
 import { Reputation } from "./Reputation";
@@ -17,6 +18,8 @@ const HomePage = () => {
       <Team />
 
       <Services />
+
+      <FooterUI />
     </>
   );
 };

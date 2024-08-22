@@ -7,6 +7,10 @@ const Header = () => {
         <button>
           <img src="/svg/logo.png" alt="logo" />
         </button>
+
+        <button className="submit-btn">
+          Contact
+        </button>
       </div>
     </div>
   );
