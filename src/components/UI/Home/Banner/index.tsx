@@ -10,7 +10,9 @@ export const Banner = ({ handleScroll }: Props) => {
           <h1 className="text-[45px] font-semibold leading-[60px]">
             IT-Outsourcing Company
           </h1>
-          <h2 className="text-3xl mt-2">Building things is our mission.</h2>
+          <h2 className="text-3xl mt-2">
+            Your partner in transformative IT solutions for growth and success
+          </h2>
           <button
             className="submit-btn mt-10 text-2xl"
             onClick={() => handleScroll("contact")}
