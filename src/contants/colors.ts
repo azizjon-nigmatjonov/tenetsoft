@@ -13,4 +13,5 @@ export const globalColors = {
   lightGray: "#ebf0fa",
   hover: "#9092a322",
   border: "#E0E3EB",
+  main: "#0a244c"
 } as const;

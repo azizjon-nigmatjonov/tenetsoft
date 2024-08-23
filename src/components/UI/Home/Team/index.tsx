@@ -5,7 +5,7 @@ export const Team = () => {
         <div className="py-20 flex justify-between lg:px-20 flex-col md:flex-row">
           <div className="md:w-1/2">
             <h4 className="section-title" style={{ textAlign: "start" }}>
-              Team
+              our Team
             </h4>
             <p className="mt-4 text-xl leading-10 text-[var(--black)]">
               For your project, we form a team consisting of a Project Manager,
