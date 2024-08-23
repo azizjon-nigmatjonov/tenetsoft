@@ -11,7 +11,7 @@ export const Banner = ({ handleScroll }: Props) => {
             IT-Outsourcing Company
           </h1>
           <h2 className="text-3xl mt-2">
-            Your partner in transformative IT solutions for growth and success
+            Your partner in inovative IT solutions <br className="hidden md:block" /> for growth and success
           </h2>
           <button
             className="submit-btn mt-10 text-2xl"
