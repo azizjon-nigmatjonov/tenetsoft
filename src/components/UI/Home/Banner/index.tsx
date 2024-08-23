@@ -15,7 +15,7 @@ export const Banner = ({ handleScroll }: Props) => {
             className="submit-btn mt-10 text-2xl"
             onClick={() => handleScroll("contact")}
           >
-            Contact Us
+            Contact us
           </button>
         </div>
         <div className="h-[50vh] hidden md:block">
