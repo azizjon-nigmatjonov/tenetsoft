@@ -1,6 +1,6 @@
 export const Reputation = () => {
   return (
-    <div className="container">
+    <div className="container" id="reputation">
       <h2 className="section-title lg:px-20">Our Reputation</h2>
 
       <div className="grid md:grid-cols-3 gap-5 md:gap-8 mt-10 lg:px-20 mb-20">

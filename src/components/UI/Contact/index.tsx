@@ -2,7 +2,7 @@ import { Form } from "./Form";
 
 export const ContactUI = ({ ContactRef }: { ContactRef: any }) => {
   return (
-    <div ref={ContactRef}>
+    <div id="contact" ref={ContactRef}>
       {/* <h2 className="section-title mt-20 lg:px-20 mb-10">our Contacts</h2> */}
       <div className="px-[22px] lg:px-20 py-20 bg-[var(--main)]">
         <div className="flex justify-center items-center md:space-x-20 flex-col md:flex-row lg:px-40">

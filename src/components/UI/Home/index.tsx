@@ -10,7 +10,6 @@ import { Team } from "./Team";
 import { Feedback } from "./Feedback";
 import { OurValues } from "./OurValues";
 import { useScreenSize } from "@/hooks/useMobile";
-import { OurStaff } from "./Staff";
 
 const HomePage = () => {
   const ContactRef: any = useRef(null);
@@ -18,10 +17,10 @@ const HomePage = () => {
 
   const handleScroll = (position: string) => {
     if (position === "contact") {
-      // const element = ContactRef.current.getBoundingClientRect();
+      const element = ContactRef.current.getBoundingClientRect();
 
       window.scrollTo({
-        top: isMobile ? 3500.5 : 3041,
+        top: element.top - 100,
         behavior: "smooth",
       });
     }
@@ -29,7 +28,7 @@ const HomePage = () => {
 
   return (
     <>
-      <Header handleScroll={handleScroll} />
+      <Header />
 
       <Banner handleScroll={handleScroll} />
 
@@ -39,7 +38,7 @@ const HomePage = () => {
 
       <Services />
 
-      <Feedback handleScroll={handleScroll} />
+      <Feedback />
 
       <OurValues />
 

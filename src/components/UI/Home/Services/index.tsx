@@ -1,7 +1,7 @@
 export const Services = () => {
   return (
     <div className="container">
-      <h2 className="section-title mt-20 lg:px-20">Our Services</h2>
+      <h2 className="section-title pt-20 lg:px-20" id="services">Our Services</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8 mt-10 lg:mx-20 pb-20">
         <div className="rounded-[8px] border border-[var(--border)] shadow-md flex items-center justify-center flex-col py-8 px-8">
           <img className="w-[70px]" src="/images/webservice.png" alt="web" />

@@ -32,21 +32,21 @@ export const FooterUI = ({ handleScroll }: Props) => {
 
           <div>
             <h3 className="text-2xl font-semibold mt-[-5px]">About Us</h3>
-            <ul className="space-y-5 text-[var(--black)] mt-8 font-bold">
+            <ul className="space-y-5 text-[var(--main)] mt-8 font-bold">
               <li>
-                <button>Reputation</button>
+                <a href="#reputation">Reputation</a>
               </li>
               <li>
-                <button>Team</button>
+                <a href="#team">Team</a>
               </li>
               <li>
-                <button>Services</button>
+                <a href="#service">Services</a>
               </li>
               <li>
-                <button>Values</button>
+                <a href="#values">Values</a>
               </li>
               <li>
-                <button onClick={() => handleScroll("contact")}>Contact</button>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
