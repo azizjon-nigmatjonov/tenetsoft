@@ -18,7 +18,7 @@ const Header = () => {
           <HumbergerMenu />
         </div>
 
-        <ul className="flex space-x-14 hidden md:inline-block">
+        <ul className="flex space-x-14 hidden md:inline-flex">
           <li>
             <a href="#services" className="text-[var(--black)] font-medium">
               Services
