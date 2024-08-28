@@ -1,10 +1,6 @@
-interface Props {
-  handleScroll: (val: string) => void;
-}
-
-export const FooterUI = ({ handleScroll }: Props) => {
+export const FooterUI = () => {
   return (
-    <div className="border-t border-[var(--border)]">
+    <div className="border-t border-[var(--border)] mt-20">
       <div className="container">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 py-20 gap-y-14 sm:gap-x-40 lg:px-20 text-center sm:text-left">
           <div>

@@ -8,7 +8,7 @@ export const Banner = ({ handleScroll }: Props) => {
       <div className="pt-[190px] pb-[210px] flex items-center justify-between lg:px-20">
         <div>
           <h1 className="text-[45px] font-semibold leading-[60px]">
-            IT-Outsourcing Company
+            IT - Project Acceleration Company
           </h1>
           <h2 className="text-3xl mt-2">
             Your partner in inovative IT solutions{" "}
