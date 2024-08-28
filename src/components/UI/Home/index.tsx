@@ -46,7 +46,7 @@ const HomePage = () => {
 
       {/* <OurStaff /> */}
 
-      <FooterUI handleScroll={handleScroll} />
+      <FooterUI />
     </>
   );
 };

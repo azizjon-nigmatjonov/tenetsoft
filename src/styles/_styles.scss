@@ -1,7 +1,11 @@
 .container {
-    padding: 0 22px;
+    padding: 0 44px;
     margin: 0 auto;
-    max-width: 1302px;
+    max-width: 1300;
+
+    @media (max-width: 768px) {
+      padding: 0 22px;
+    }
 }
 
 .submit-btn {
@@ -77,4 +81,8 @@ input[type="number"] {
 /* Optionally: Remove appearance in Safari to make it consistent */
 input[type="number"] {
   -webkit-appearance: none;
+}
+
+button {
+  margin: 0;
 }

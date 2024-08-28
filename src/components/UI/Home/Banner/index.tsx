@@ -5,7 +5,7 @@ interface Props {
 export const Banner = ({ handleScroll }: Props) => {
   return (
     <div className="container">
-      <div className="pt-[190px] pb-[210px] flex items-center justify-between lg:px-20">
+      <div className="pt-[190px] pb-[210px] flex items-center justify-between lg:px-20 text-center sm:text-left">
         <div>
           <h1 className="text-[45px] font-semibold leading-[60px]">
             IT - Project Acceleration Company

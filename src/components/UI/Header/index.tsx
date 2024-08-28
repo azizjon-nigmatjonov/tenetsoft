@@ -7,7 +7,7 @@ interface Props {
 const Header = () => {
   return (
     <div className="border-b border-[var(--border)] fixed top-0 w-full bg-white">
-      <div className="container flex justify-between items-center h-[70px]">
+      <div className="container flex justify-between items-center h-[70px] mx-0">
         <button>
           <img
             src="/images/logo-big.png"
