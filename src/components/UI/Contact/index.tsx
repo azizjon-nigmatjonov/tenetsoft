@@ -1,3 +1,4 @@
+import { InstagramIcon, TwitterIcon, YoutubeIcon } from "../Icons";
 import { Form } from "./Form";
 
 export const ContactUI = ({ ContactRef }: { ContactRef: any }) => {
@@ -5,8 +6,8 @@ export const ContactUI = ({ ContactRef }: { ContactRef: any }) => {
     <div id="contact" ref={ContactRef}>
       {/* <h2 className="section-title mt-20 lg:px-20 mb-10">our Contacts</h2> */}
       <div className="container">
-        <div className="px-[22px] lg:px-20">
-          <div className="flex justify-center py-20 items-center md:space-x-20 flex-col md:flex-row lg:px-40 bg-[var(--main)] rounded-[32px]">
+        <div className="lg:px-20">
+          <div className="flex justify-center py-5 md:py-20 items-center md:space-x-20 flex-col md:flex-row px-[22px] lg:px-40 bg-[var(--main)] rounded-[32px]">
             <div className="md:w-1/2 border border-[var(--border)] rounded-[12px] p-8 bg-white">
               <p className="text-2xl font-bold mb-2">
                 Do You Have An Idea To Realize? <br /> Let’s Discuss About It!{" "}
@@ -47,34 +48,22 @@ export const ContactUI = ({ ContactRef }: { ContactRef: any }) => {
                   src="/svg/telegram.svg"
                   alt="telegram"
                 />
-                <p>t.me/tenetsoft_admin</p>
+                <span>t.me/tenetsoft_admin</span>
               </a>
               <ul className="flex space-x-5">
                 <li className="hover:scale-[1.1] duration-200">
                   <a href="https://www.instagram.com/tenetsoft.uz/">
-                    <img
-                      className="w-[24px]"
-                      src="/svg/instagram.svg"
-                      alt="instagram"
-                    />
+                    <InstagramIcon width={24} fill="white" />
                   </a>
                 </li>
                 <li className="hover:scale-[1.1] duration-200">
                   <a href="https://www.youtube.com/@tenet_soft">
-                    <img
-                      className="w-[24px]"
-                      src="/svg/youtube.svg"
-                      alt="youtube"
-                    />
+                    <YoutubeIcon width={24} fill="white" />
                   </a>
                 </li>
                 <li className="hover:scale-[1.1] duration-200">
                   <a href="https://x.com/tenet_soft">
-                    <img
-                      className="w-[24px]"
-                      src="/svg/twitter.svg"
-                      alt="twitter"
-                    />
+                    <TwitterIcon width={24} fill="white" />
                   </a>
                 </li>
               </ul>

@@ -1,8 +1,6 @@
 "use client";
 
-interface Props {
-  handleScroll: (val: string) => void;
-}
+import { HumbergerMenu } from "./Menu";
 
 const Header = () => {
   return (
@@ -16,27 +14,25 @@ const Header = () => {
           />
         </button>
 
-        <ul className="flex space-x-14">
-        <li className="hidden sm:inline-block">
-            <a
-              href="#services"
-              className="text-[var(--black)] font-medium"
-            >
+        <div className="md:hidden">
+          <HumbergerMenu />
+        </div>
+
+        <ul className="flex space-x-14 hidden md:inline-block">
+          <li>
+            <a href="#services" className="text-[var(--black)] font-medium">
               Services
             </a>
           </li>
-          <li className="hidden sm:inline-block">
-            <a
-              href="#contact"
-              className="text-[var(--black)] font-medium"
-            >
+          <li>
+            <a href="#contact" className="text-[var(--black)] font-medium">
               Contacts
             </a>
           </li>
           <li>
             <a
               href="tel:+998901856398"
-              className="submit-btn text-[11px] sm:text-sm"
+              className="submit-btn text-sm"
             >
               +998 (90) 185 63 98
             </a>
