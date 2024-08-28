@@ -10,6 +10,7 @@ import "../styles/index.scss";
 import SetUpGlobalColors from "./Logic";
 import { QueryClientProvider } from "react-query";
 import { queryClient } from "@/utils/request";
+import I18NextProvider from "@/components/UI/I18NextProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,13 +22,15 @@ export default function RootLayout({
   const muiTheme = getMuiTheme();
 
   return (
-    <html lang="en">
-      <SetUpGlobalColors />
-      <body className={inter.className}>
-        <QueryClientProvider client={queryClient}>
-          <ThemeProvider theme={muiTheme}>{children}</ThemeProvider>
-        </QueryClientProvider>
-      </body>
-    </html>
+    <I18NextProvider>
+      <html lang="en">
+        <SetUpGlobalColors />
+        <body className={inter.className}>
+          <QueryClientProvider client={queryClient}>
+            <ThemeProvider theme={muiTheme}>{children}</ThemeProvider>
+          </QueryClientProvider>
+        </body>
+      </html>
+    </I18NextProvider>
   );
 }

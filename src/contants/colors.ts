@@ -5,7 +5,7 @@ export const globalColors = {
   black30: "#1B1B1D",
   background: "#111015",
   primary: "#3559C7",
-  primary20: "#AECADF",
+  primary20: "#f4f7ff",
   primary30: "#bcd7ec",
   primary40: "#BBD7EC",
   primary50: "#3559C733",

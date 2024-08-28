@@ -1,12 +1,13 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
-import useTranslation from "next-translate/useTranslation";
+import { useTranslation } from "react-i18next";
 import axios from "axios";
 import toast from "react-hot-toast";
 
 export const Form = () => {
   const { t } = useTranslation("common");
+
   const schema = yup.object().shape({
     name: yup.string().trim().required(t("required_field")),
     phone: yup.string().trim().required(t("required_field")),
