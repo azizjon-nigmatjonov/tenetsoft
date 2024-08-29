@@ -9,7 +9,7 @@ export const useLangs = () => {
       value: "en",
     },
     {
-      label: <div>O'zbekcha</div>,
+      label: <div>O&aposzbekcha</div>,
       value: "uz",
     },
   ];
