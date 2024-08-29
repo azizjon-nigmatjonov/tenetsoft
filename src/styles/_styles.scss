@@ -1,18 +1,57 @@
 .container {
-    padding: 0 44px;
-    margin: 0 auto;
-    max-width: 1300px;
+  padding: 0 44px;
+  margin: 0 auto;
+  max-width: 1300px;
 
-    @media (max-width: 768px) {
-      padding: 0 22px;
-    }
+  @media (max-width: 768px) {
+    padding: 0 22px;
+  }
 }
 
-.submit-btn {
+.submit-btn, .default-btn {
   background-color: var(--primary);
   color: white;
-  border-radius: 12px;
-  padding: 12px 25px;
+  border-radius: 8px;
+  padding: 8px 20px;
+}
+
+.default-btn {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+#cselect,
+#HFMultipleSelect {
+  width: 100%;
+  padding: 0 10px 0 0;
+
+  .MuiInputBase-root {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    width: 100%;
+    border-radius: 8px;
+
+    svg {
+      display: none;
+    }
+
+    &.Mui-focused {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: var(--main);
+      }
+    }
+
+    fieldset {
+      border: none;
+      background-color: transparent;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
 }
 
 .section-title {
@@ -24,7 +63,7 @@
 }
 
 .form-input {
-  border: 1px solid #E0E3EB !important;
+  border: 1px solid #e0e3eb !important;
   border-radius: 4px;
   outline: none;
   padding: 8px 16px;

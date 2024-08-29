@@ -1,5 +1,9 @@
 {
   "common": {
-    "required_field": "Обязательное поле"
+    "required_field": "Обязательное поле",
+    "services": "Услуги",
+    "contacts": "Контакты",
+    "it_outsource_company": "IT-Outsourcing Company",
+    "your_partner": "Your partner in inovative IT solutions for growth and success"
   }
 }

@@ -1,15 +1,17 @@
+"use client";
+
 import { CloseOutlined } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 import { InstagramIcon, TelegramIcon, TwitterIcon } from "../../Icons";
 import { useTranslation } from "react-i18next";
 export const HumbergerMenu = () => {
-  const { i18n } = useTranslation("common");
+  // const { i18n } = useTranslation("common");
   const [open, setOpen] = useState(false);
-  
-  const changeLang = (val: string) => {
-    i18n.changeLanguage(val);
-  };
+
+  // const changeLang = (val: string) => {
+  //   i18n.changeLanguage(val);
+  // };
 
   return (
     <div className="h-full">
@@ -18,7 +20,7 @@ export const HumbergerMenu = () => {
       </button>
 
       <div
-        className={`w-full h-[100vh] fixed top-0 bg-[var(--primary20)] duration-200 px-[22px] ${
+        className={`w-full h-[100vh] fixed top-0  bg-[var(--primary20)] duration-200 px-[22px] ${
           open ? "right-0" : "right-[-100vw]"
         }`}
       >
@@ -43,25 +45,37 @@ export const HumbergerMenu = () => {
                 Contacts
               </a>
             </li>
-            <li className="flex space-x-3 text-[var(--gray)]">
-              <button
-                onClick={() => changeLang("uz")}
-                className={i18n.language === "uz" ? "text-[var(--main)]" : ""}
-              >
-                UZ
-              </button>
-              <button
-                onClick={() => changeLang("ru")}
-                className={i18n.language === "ru" ? "text-[var(--main)]" : ""}
-              >
-                RU
-              </button>
-              <button
-                onClick={() => changeLang("en")}
-                className={i18n.language === "en" ? "text-[var(--main)]" : ""}
-              >
-                EN
-              </button>
+            <li className="flex space-x-3">
+              <div>
+                {/* <button
+                  onClick={() => changeLang("uz")}
+                  className={`text-[var(--gray)] ${
+                    i18n.language === "uz" ? "text-[var(--black)]" : ""
+                  }`}
+                >
+                  UZ
+                </button>
+                <button
+                  onClick={() => changeLang("ru")}
+                  className={
+                    i18n.language === "ru"
+                      ? "text-[var(--black)]"
+                      : "text-[var(--gray)]"
+                  }
+                >
+                  RU
+                </button>
+                <button
+                  onClick={() => changeLang("en")}
+                  className={
+                    i18n.language === "en"
+                      ? "text-[var(--black)]"
+                      : "text-[var(--gray)]"
+                  }
+                >
+                  EN
+                </button> */}
+              </div>
             </li>
           </ul>
         </div>

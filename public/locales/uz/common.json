@@ -1,5 +1,10 @@
 {
   "common": {
-    "required_field": "Majburiy maydon"
+    "required_field": "Majburiy maydon",
+    "services": "Xizmlatlar",
+    "contacts": "Kontaktlar",
+    "it_outsource_company": "IT-loyihalar ishlab chiquvchi Kampaniya",
+    "your_partner": "Biznesingiz muvaffaqiyati uchun <br /> IT-hamkoringiz",
+    "contact_us": "Biz bilan bog'laning"
   }
 }
