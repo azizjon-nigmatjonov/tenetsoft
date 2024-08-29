@@ -8,6 +8,7 @@ interface Props {
 
 export const Banner = ({ handleScroll }: Props) => {
   const { t } = useTranslation("common");
+
   return (
     <div className="container">
       <div className="pt-[150px] md:pt-[190px] pb-[170px] md:pb-[210px] flex items-center md:justify-between flex-col md:flex-row lg:px-20 text-center sm:text-left">
@@ -16,7 +17,7 @@ export const Banner = ({ handleScroll }: Props) => {
             {t("it_outsource_company")}
           </h1>
           <h2
-            className="text-3xl mt-5"
+            className="text-3xl mt-5 font-medium text-[var(--primary)]"
             dangerouslySetInnerHTML={{ __html: t("your_partner") }}
           ></h2>
           <div className="mt-20 flex space-x-5">

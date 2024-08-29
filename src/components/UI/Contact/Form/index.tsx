@@ -54,7 +54,7 @@ export const Form = () => {
       <div>
         <input
           type="text"
-          placeholder="Name"
+          placeholder={t("name")}
           {...register("name")}
           className="form-input"
         />
@@ -64,14 +64,14 @@ export const Form = () => {
       <div>
         <input
           type="text"
-          placeholder="Phone number"
+          placeholder={t("phone_number")}
           {...register("phone")}
           className="form-input"
         />
         {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
       </div>
 
-      <button className="submit-btn w-full">Book an appointment</button>
+      <button className="submit-btn w-full">{t("book_appointment")}</button>
     </form>
   );
 };

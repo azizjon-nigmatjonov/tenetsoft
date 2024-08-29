@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { InstagramIcon, TwitterIcon, YoutubeIcon } from "../Icons";
 import { Form } from "./Form";
 
 export const ContactUI = ({ ContactRef }: { ContactRef: any }) => {
+  const { t } = useTranslation("common");
   return (
     <div id="contact" ref={ContactRef}>
       {/* <h2 className="section-title mt-20 lg:px-20 mb-10">our Contacts</h2> */}
@@ -9,13 +11,11 @@ export const ContactUI = ({ ContactRef }: { ContactRef: any }) => {
         <div className="lg:px-20">
           <div className="flex justify-center py-5 md:py-20 items-center md:space-x-20 flex-col md:flex-row px-[22px] lg:px-40 bg-[var(--main)] rounded-[32px]">
             <div className="md:w-1/2 border border-[var(--border)] rounded-[12px] p-8 bg-white">
-              <p className="text-2xl font-bold mb-2">
-                Do You Have An Idea To Realize? <br /> Let’s Discuss About It!{" "}
-                <br />
-              </p>
-              <p className="mb-5 font-medium text-lg">
-                Leave us your contact we will reach you
-              </p>
+              <p
+                className="text-2xl font-bold mb-2"
+                dangerouslySetInnerHTML={{ __html: t("Do You Have An Idea") }}
+              ></p>
+              <p className="mb-5 font-medium text-lg">{t("Leave us your")}</p>
               <Form />
             </div>
 
@@ -29,10 +29,7 @@ export const ContactUI = ({ ContactRef }: { ContactRef: any }) => {
                   src="/svg/location.svg"
                   alt="location"
                 />
-                <p>
-                  Impact Technology Hub, coworking, Tashkent, Bogibuston Street,
-                  186
-                </p>
+                <p>{t("Impact Technology Hub")}</p>
               </a>
               <a href="tel:+998901856398" className="flex space-x-2">
                 <img className="w-[24px]" src="/svg/phone.svg" alt="phone" />

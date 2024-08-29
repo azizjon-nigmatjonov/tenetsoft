@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { InstagramIcon, TelegramIcon, TwitterIcon } from "../Icons";
 
 export const FooterUI = () => {
+  const { t } = useTranslation("common");
   return (
     <div className="border-t border-[var(--border)] mt-20">
       <div className="container">
@@ -11,13 +13,16 @@ export const FooterUI = () => {
               alt="logo"
               className="w-[170px] mx-auto sm:mx-0"
             />
-            <p className="mt-5 md:mt-10 text-lg">
-              Your partner in transformative IT solutions for growth and success
-            </p>
+            <p
+              className="mt-5 md:mt-10 text-lg"
+              dangerouslySetInnerHTML={{ __html: t("your_partner") }}
+            ></p>
           </div>
 
           <div>
-            <h3 className="text-2xl font-semibold mt-[-5px]">Service</h3>
+            <h3 className="text-2xl font-semibold mt-[-5px]">
+              {t("services")}
+            </h3>
             <ul className="space-y-5 text-[var(--primary)] mt-8 font-bold">
               <li>Web Developement</li>
               <li>ERP/CRM Developement</li>
@@ -29,22 +34,24 @@ export const FooterUI = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-semibold mt-[-5px]">About Us</h3>
+            <h3 className="text-2xl font-semibold mt-[-5px]">
+              {t("about_us")}
+            </h3>
             <ul className="space-y-5 text-[var(--primary)] mt-8 font-bold">
               <li>
-                <a href="#reputation">Reputation</a>
+                <a href="#reputation">{t("Reputation")}</a>
               </li>
               <li>
-                <a href="#team">Team</a>
+                <a href="#team">{t("Team")}</a>
               </li>
               <li>
-                <a href="#service">Services</a>
+                <a href="#service">{t("services")}</a>
               </li>
               <li>
-                <a href="#values">Values</a>
+                <a href="#values">{t("values")}</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact">{t("contacts")}</a>
               </li>
             </ul>
           </div>
@@ -52,7 +59,7 @@ export const FooterUI = () => {
       </div>
       <div className="text-[var(--primary)] border-t border-[var(--border)] py-5">
         <div className="container flex items-center justify-center md:justify-between flex-col-reverse md:flex-row text-center md:text-left">
-          <p className="text-sm">© 2024 TenetSoft. All rights reserved</p>
+          <p className="text-sm">{t("rights_reserved")}</p>
           <ul className="mb-5 md:mb-0 flex space-x-3">
             <li>
               <a
