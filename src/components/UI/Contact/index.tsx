@@ -31,9 +31,9 @@ export const ContactUI = ({ ContactRef }: { ContactRef: any }) => {
                 />
                 <p>{t("Impact Technology Hub")}</p>
               </a>
-              <a href="tel:+998901856398" className="flex space-x-2">
+              <a href="tel:+998994912830" className="flex space-x-2">
                 <img className="w-[24px]" src="/svg/phone.svg" alt="phone" />
-                <p>+998 90 185 63 98</p>
+                <p>+998 99 491 28 30</p>
               </a>
               <a href="mailto:tenetsoftuz@gmail.com" className="flex space-x-2">
                 <img className="w-[24px]" src="/svg/email.svg" alt="email" />
