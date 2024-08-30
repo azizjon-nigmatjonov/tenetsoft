@@ -7,7 +7,7 @@ import { HumbergerMenu } from "./Menu";
 const Header = () => {
   const { t } = useTranslation("common");
   return (
-    <div className="border-b border-[var(--border)] fixed top-0 w-full bg-white">
+    <div className="border-b border-[var(--border)] fixed top-0 z-[99] w-full bg-white">
       <div className="container flex justify-between items-center h-[70px] mx-0">
         <button>
           <img

@@ -5,11 +5,11 @@ import { Form } from "./Form";
 export const ContactUI = ({ ContactRef }: { ContactRef: any }) => {
   const { t } = useTranslation("common");
   return (
-    <div id="contact" ref={ContactRef}>
+    <div id="contact" ref={ContactRef} className="bg-[var(--main)]">
       {/* <h2 className="section-title mt-20 lg:px-20 mb-10">our Contacts</h2> */}
       <div className="container">
         <div className="lg:px-20">
-          <div className="flex justify-center py-5 md:py-20 items-center md:space-x-20 flex-col md:flex-row px-[22px] lg:px-40 bg-[var(--main)] rounded-[32px]">
+          <div className="flex justify-center py-5 md:py-20 items-center md:space-x-20 flex-col md:flex-row sm:px-[22px] lg:px-20">
             <div className="md:w-1/2 border border-[var(--border)] rounded-[12px] p-8 bg-white">
               <p
                 className="text-2xl font-bold mb-2"

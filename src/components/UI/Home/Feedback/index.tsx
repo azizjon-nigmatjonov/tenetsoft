@@ -12,7 +12,7 @@ export const Feedback = () => {
         className="text-3xl md:text-[45px] font-semibold leading-[45px] md:leading-[60px]"
         dangerouslySetInnerHTML={{ __html: t("NEED_EXPERT_FEEDBACK") }}
       ></h2>
-      <a className="submit-btn mt-10 inline-block" href="#contact">
+      <a className="submit-btn mt-10 inline-block md:text-2xl" href="#contact">
         {t("Schedule a meeting")}
       </a>
     </div>

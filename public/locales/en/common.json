@@ -14,14 +14,15 @@
     "our_team_dedicated": "Our team is dedicated to craete inovative solutions and we are here to help you to build up your product",
     "Research_Prototyping": "Research, Prototyping, and Cutting-Edge Techniques for Perfect Solutions",
     "our_team": "Our Team",
-    "For_your_project": "For your project, we form a team consisting of a Project Manager, UI/UX designer, DevOps specialist, QA engineer, Backend, and Frontend developers.",
+    "For_your_project": "We will give the best team to your project, bringing together experts in management, design, development, and quality to ensure your success..",
+    "see_team_members": "See team members",
     "Our Services": "Our Services",
     "Web Developement": "Web Developement",
     "ERP/CRM Development": "ERP/CRM Development",
     "Mobile developement": "Mobile developement",
     "UX/UI Design": "UX/UI Design",
     "MVP For Startups": "MVP For Startups",
-    "IT Consulting": "IT Consulting",
+    "it_consulting": "IT Consulting",
     "NEED_EXPERT_FEEDBACK": "NEED EXPERT FEEDBACK <br /> ON YOUR IDEA?",
     "Schedule a meeting": "Schedule a meeting",
     "our values": "our values",
@@ -42,5 +43,9 @@
     "Team": "Team",
     "values": "Values",
     "rights_reserved": "© 2024 TenetSoft. All rights reserved"
+  },
+  "services": {
+    "mobile_developement": "Development of mobile applications",
+        "we_build_mobile": "We have experts who specialize in building creative and functional user interfaces for mobile applications, perfected through collaboration with startups."
   }
 }

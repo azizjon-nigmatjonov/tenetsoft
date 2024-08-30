@@ -45,7 +45,7 @@ export default function SEO({ title }: Props) {
       <meta name="twitter:site" content={metaTitle} />
       <meta name="twitter:creator" content="Mukhammadaziz Nigmatjonov" />
       <meta name="twitter:image" content="/images/cloud.png" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/images/ux.svg" />
     </Head>
   );
 }

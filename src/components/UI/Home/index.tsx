@@ -9,11 +9,13 @@ import { Services } from "./Services";
 import { Team } from "./Team";
 import { Feedback } from "./Feedback";
 import { OurValues } from "./OurValues";
-import { useScreenSize } from "@/hooks/useMobile";
+
+import SEO from "@/components/CElements/SEO";
+import { TeamMembers } from "./TeamMembers";
+import { ServicesAllInOne } from "./Services/All";
 
 const HomePage = () => {
   const ContactRef: any = useRef(null);
-  const isMobile: any = useScreenSize("mobile");
 
   const handleScroll = (position: string) => {
     if (position === "contact") {
@@ -28,15 +30,18 @@ const HomePage = () => {
 
   return (
     <>
+      <SEO title="Home page" />
       <Header />
 
       <Banner handleScroll={handleScroll} />
 
-      <Reputation />
+      <Services />
 
       <Team />
 
-      <Services />
+      <ServicesAllInOne />
+
+      {/* <Reputation /> */}
 
       <Feedback />
 
@@ -44,6 +49,8 @@ const HomePage = () => {
 
       <ContactUI ContactRef={ContactRef} />
 
+
+      <TeamMembers />
       {/* <OurStaff /> */}
 
       <FooterUI />
