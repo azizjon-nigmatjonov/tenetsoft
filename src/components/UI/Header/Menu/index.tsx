@@ -81,8 +81,8 @@ export const HumbergerMenu = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <a href="tel:+998901856398" className="submit-btn text-sm">
-            +998 (90) 185 63 98
+          <a href="tel:+998994912830" className="submit-btn text-sm">
+            +998 (99) 491 28 30
           </a>
 
           <ul className="mb-5 md:mb-0 flex space-x-3 mt-5">
