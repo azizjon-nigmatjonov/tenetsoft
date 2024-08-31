@@ -50,7 +50,7 @@ const HomePage = () => {
       <ContactUI ContactRef={ContactRef} />
 
 
-      <TeamMembers />
+      {/* <TeamMembers /> */}
       {/* <OurStaff /> */}
 
       <FooterUI />
