@@ -45,7 +45,10 @@
     "rights_reserved": "© 2024 TenetSoft. All rights reserved"
   },
   "services": {
-    "mobile_developement": "Development of mobile applications",
-        "we_build_mobile": "We have experts who specialize in building creative and functional user interfaces for mobile applications, perfected through collaboration with startups."
+    "mobile_developement": "Development of <br /> mobile applications",
+    "we_build_mobile": "We provide experts for every project who have strong experience in building creative and functional user interfaces for mobile applications.",
+    "crossplatform": "Crossplatform",
+    "erp_systems": "ERP systems",
+    "systems_delivery": "IT systems of any complexity delivered within timelines that suit you."
   }
 }

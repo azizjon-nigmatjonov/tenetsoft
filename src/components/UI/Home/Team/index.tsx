@@ -5,7 +5,7 @@ export const Team = () => {
   return (
     <div className="bg-[var(--primary60)]">
       <div className="container">
-        <div className="py-20 flex justify-between lg:px-20 flex-col md:flex-row">
+        <div className="py-20 flex justify-between flex-col md:flex-row">
           <div className="md:w-1/2">
             <h4 className="section-title" style={{ textAlign: "start" }}>
               {t("our_team")}

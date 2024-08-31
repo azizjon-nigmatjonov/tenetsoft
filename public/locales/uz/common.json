@@ -45,7 +45,10 @@
     "rights_reserved": "© 2024 TenetSoft. Barcha huquqlar himoyalangan"
   },
   "services": {
-    "mobile_developement": "Mobil ilova ishlab chiqarish",
-    "we_build_mobile": "Bizda startaplar, kreativ va funksional mobil ilovalar takomillashgan foydalanuvchi interfeyslarini yaratishda tajriba to'plagan mutaxassislar mavjud."
+    "mobile_developement": "Mobil ilovalar <br /> ishlab chiqarish",
+    "we_build_mobile": "Biz gar bir loyiha uchun kreativ va funksional mobil ilova foydalanuvchi interfeyslarini yaratishda katta tajribaga ega bo'lgan mutaxassislarni jalb qilamiz.",
+    "crossplatform": "Crossplatforma",
+     "erp_systems": "ERP sistemalari",
+     "systems_delivery": "Har qanday murakkablikdagi IT tizimlari siz uchun qulay muddatlarda yetkazib beriladi."
   }
 }

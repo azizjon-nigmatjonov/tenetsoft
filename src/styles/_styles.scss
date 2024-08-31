@@ -12,7 +12,7 @@
   background-color: var(--primary);
   color: white;
   border-radius: 8px;
-  padding: 8px 20px;
+  padding: 12px 24px;
 }
 
 .default-btn {
@@ -54,7 +54,7 @@
   }
 }
 
-.section-title {
+.section-title, .service-title {
   font-size: 50px;
   font-weight: 600;
   color: var(--primary);
@@ -64,6 +64,11 @@
     font-size: 34px;
   }
   // text-align: center;
+}
+
+.service-title {
+  text-transform: none;
+  line-height: 60px;
 }
 
 .form-input {

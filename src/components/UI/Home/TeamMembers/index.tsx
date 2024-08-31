@@ -19,7 +19,7 @@ export const TeamMembers = () => {
 
   return (
     <div id="team_members" className="container">
-      <div className="pt-20 lg:px-20">
+      <div className="pt-20">
         <h4 className="section-title mb-10" style={{ textAlign: "start" }}>
           {t("our_team")}
         </h4>
