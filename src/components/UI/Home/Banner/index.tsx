@@ -36,7 +36,7 @@ export const Banner = ({ handleScroll }: Props) => {
             </button>
           </div>
         </div>
-        <div className="hidden md:w-1/2 mt-10 md:mt-0">
+        <div className="hidden md:inline-block md:w-1/2 mt-10 md:mt-0">
           <img src="/images/web.jpg" alt="company" className="h-full" />
         </div>
       </div>
