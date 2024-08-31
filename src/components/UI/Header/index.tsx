@@ -37,7 +37,7 @@ const Header = () => {
           </li>
           <li>
             <a href="tel:+998901856398" className="submit-btn text-sm">
-              +998 (99) 491 28 30
+              +998 90 185 63 98
             </a>
           </li>
         </ul>
