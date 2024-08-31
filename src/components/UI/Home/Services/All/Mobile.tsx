@@ -10,7 +10,7 @@ export const MobileDevelopement = ({ element = {} }: { element: any }) => {
         className="service-title"
         dangerouslySetInnerHTML={{ __html: t("mobile_developement") }}
       ></h3>
-      <div className="grid grid-cols-2 gap-x-20">
+      <div className="grid lg:grid-cols-2 gap-20">
         <div>
           <p className="text-xl mt-10 leading-[35px] pr-20">{t("we_build_mobile")}</p>
 

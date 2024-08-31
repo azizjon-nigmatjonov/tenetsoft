@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { MobileDevelopement } from "./Mobile";
 import axios from "axios";
 import { ERPDevelopement } from "./ERP";
+import { DesignDevelopement } from "./Design";
 
 export const ServicesAllInOne = () => {
   const [data, setData]: any = useState({ isLoading: true, list: [] });
@@ -21,6 +22,7 @@ export const ServicesAllInOne = () => {
       <div className="py-20">
         <MobileDevelopement element={data.list?.mobile ?? {}} />
         <ERPDevelopement element={data.list?.erp ?? {}} />
+        <DesignDevelopement element={data.list?.design ?? {}} />
       </div>
     </div>
   );

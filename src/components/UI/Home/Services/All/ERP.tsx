@@ -1,8 +1,3 @@
-import {
-  AndroidIcon,
-  AppleIcon,
-  CrossPlatformIcon,
-} from "@/components/UI/IconPicker/Icons";
 import { CrmIcon, EcomerseIcon, ELearningIcon, EmailIcon, ListIcon, WhareHouseIcon } from "@/components/UI/Icons";
 import { useTranslation } from "react-i18next";
 
@@ -15,7 +10,7 @@ export const ERPDevelopement = ({ element = {} }: { element: any }) => {
         className="service-title"
         dangerouslySetInnerHTML={{ __html: t("erp_systems") }}
       ></h3>
-      <div className="grid grid-cols-2 gap-x-20 mt-10">
+      <div className="grid lg:grid-cols-2 gap-20 mt-10">
         <div>
           <img
             className="scale-[1.3]"
