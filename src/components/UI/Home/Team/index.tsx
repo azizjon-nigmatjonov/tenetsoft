@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 export const Team = () => {
   const { t } = useTranslation("common");
   return (
-    <div className="bg-[var(--primary60)]">
+    <div className="bg-[var(--primary60)] md:mt-20">
       <div className="container">
         <div className="py-20 flex justify-between flex-col md:flex-row">
           <div className="md:w-1/2">

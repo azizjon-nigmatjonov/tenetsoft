@@ -14,13 +14,13 @@ export const HumbergerMenu = () => {
   // };
 
   return (
-    <div className="h-full">
+    <>
       <button onClick={() => setOpen(true)}>
         <MenuIcon style={{ color: "var(--main)" }} />
       </button>
 
       <div
-        className={`w-full h-[100vh] fixed top-0  bg-[var(--primary20)] duration-200 px-[22px] ${
+        className={`w-full h-[100vh] fixed top-0 bg-[var(--primary20)] duration-200 px-[22px] ${
           open ? "right-0" : "right-[-100vw]"
         }`}
       >
@@ -116,6 +116,6 @@ export const HumbergerMenu = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </>
   );
 };

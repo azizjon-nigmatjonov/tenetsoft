@@ -14,7 +14,7 @@
     "our_team_dedicated": "Our team is dedicated to craete inovative solutions and we are here to help you to build up your product",
     "Research_Prototyping": "Research, Prototyping, and Cutting-Edge Techniques for Perfect Solutions",
     "our_team": "Our Team",
-    "For_your_project": "We will give the best team to your project, bringing together experts in management, design, development, and quality to ensure your success..",
+    "For_your_project": "We will give the best team to your project, bringing together experts in management, design, development, and quality to ensure your success",
     "see_team_members": "See team members",
     "Our Services": "Our Services",
     "Web Developement": "Web Developement",
@@ -50,6 +50,10 @@
     "crossplatform": "Crossplatform",
     "erp_systems": "ERP systems",
     "systems_delivery": "IT systems of any complexity delivered within timelines that suit you.",
-    "we_provide_design": "By researching your clients, we provide user-friendly UX/UI design for your project."
+    "we_provide_design": "By researching your clients, we provide user-friendly UX/UI design for your project.",
+    "web_design": "Web design",
+    "mobile_design": "Mobile design",
+    "start_up_mvp": "MVP For Startups",
+    "start_up_suppport": "In collaboration with startups, we help test ideas quickly with minimal resources, scale them with the necessary potential, and turn the idea into reality."
   }
 }

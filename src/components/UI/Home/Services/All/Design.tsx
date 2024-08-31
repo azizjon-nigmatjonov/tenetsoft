@@ -11,32 +11,32 @@ export const DesignDevelopement = ({ element = {} }: { element: any }) => {
         className="service-title"
         dangerouslySetInnerHTML={{ __html: t("UX/UI Design") }}
       ></h3>
-      <div className="grid lg:grid-cols-2 gap-20">
+      <div className="grid lg:grid-cols-2 gap-10 sm:gap-20">
         <div>
-          <p className="text-xl mt-10 leading-[35px] pr-20">{t("we_provide_design")}</p>
+          <p className="sm:text-xl mt-5 sm:mt-10 leading-[30px] sm:leading-[35px] sm:pr-20">{t("we_provide_design")}</p>
 
-          <div className="grid grid-cols-3 gap-3 mt-10">
-            <div className="w-full bg-[var(--primary60)] rounded-[8px] p-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-10">
+            <div className="w-full card-shadow rounded-[8px] p-4">
               <UXIcon />
               <h3 className="font-semibold mt-3">UX</h3>
             </div>
-            <div className="w-full bg-[var(--primary60)] rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4">
               <DesingUIIcon />
               <h3 className="font-semibold mt-3">UI</h3>
             </div>
-            <div className="w-full bg-[var(--primary60)] rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4">
               <PhoneIcon />
               <h3 className="font-semibold mt-3">{t("mobile_design")}</h3>
             </div>
-            <div className="w-full bg-[var(--primary60)] rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4">
               <DesktopIcon />
               <h3 className="font-semibold mt-3">{t("web_design")}</h3>
             </div>
-            <div className="w-full bg-[var(--primary60)] rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4">
               <ProtoTypeIcon />
               <h3 className="font-semibold mt-3">Prototyping</h3>
             </div>
-            <div className="w-full bg-[var(--primary60)] rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4">
               <AtomicIcon />
               <h3 className="font-semibold mt-3">Atomic Design</h3>
             </div>
@@ -44,7 +44,7 @@ export const DesignDevelopement = ({ element = {} }: { element: any }) => {
         </div>
 
         <div>
-          <img className="scale-[1.5]" src={element.image} alt="mobile service" />
+          <img className="scale-[1.1] sm:scale-[1.5]" src={element.image} alt="mobile service" />
         </div>
       </div>
     </div>

@@ -56,7 +56,7 @@ export const SwiperWrapper = ({
                 />
               </div>
             ) : (
-              <div className="h-[300px] w-full bg-[var(--primary60)]"></div>
+              <div className="h-[300px] w-full card-shadow"></div>
             )}
             <h3 className="text-xl font-bold mt-5">{item.name}</h3>
             <p className="font-bold text-[var(--primary)] mt-2">{item.role}</p>

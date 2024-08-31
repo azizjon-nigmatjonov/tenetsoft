@@ -3,6 +3,7 @@ import { MobileDevelopement } from "./Mobile";
 import axios from "axios";
 import { ERPDevelopement } from "./ERP";
 import { DesignDevelopement } from "./Design";
+import { StartUpdDevelopement } from "./StartUp";
 
 export const ServicesAllInOne = () => {
   const [data, setData]: any = useState({ isLoading: true, list: [] });
@@ -19,10 +20,11 @@ export const ServicesAllInOne = () => {
   
   return (
     <div className="container">
-      <div className="py-20">
+      <div className="sm:py-20">
         <MobileDevelopement element={data.list?.mobile ?? {}} />
         <ERPDevelopement element={data.list?.erp ?? {}} />
         <DesignDevelopement element={data.list?.design ?? {}} />
+        <StartUpdDevelopement element={data.list?.startup ?? {}} />
       </div>
     </div>
   );

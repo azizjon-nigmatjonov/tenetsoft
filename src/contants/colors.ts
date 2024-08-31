@@ -9,7 +9,7 @@ export const globalColors = {
   primary30: "#bcd7ec",
   primary40: "#BBD7EC",
   primary50: "#3559C733",
-  primary60: "#F4F7FF",
+  primary60: "#daeaff",
   gray: "#9092a3",
   gray20: "#f7f8f7",
   lightGray: "#ebf0fa",
