@@ -24,18 +24,18 @@ export const StartUpdDevelopement = ({ element = {} }: { element: any }) => {
             {t("start_up_suppport")}
           </p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap gap-3 mt-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 mt-10">
             <div className="w-full card-shadow rounded-[8px] p-4">
               <UXIcon />
-              <h3 className="font-semibold mt-3">{t("analayze")}</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">{t("analayze")}</h3>
             </div>
             <div className="w-full card-shadow rounded-[8px] p-4">
               <BuildTestIcon />
-              <h3 className="font-semibold mt-3">{t("build_test")}</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">{t("build_test")}</h3>
             </div>
             <div className="w-full card-shadow rounded-[8px] p-4">
               <AutoTest />
-              <h3 className="font-semibold mt-3">{t("find_investment")}</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">{t("find_investment")}</h3>
             </div>
           </div>
         </div>

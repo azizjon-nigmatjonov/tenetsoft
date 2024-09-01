@@ -48,15 +48,23 @@
     "mobile_developement": "Mobil ilovalar <br /> ishlab chiqarish",
     "we_build_mobile": "Biz gar bir loyiha uchun kreativ va funksional mobil ilova foydalanuvchi interfeyslarini yaratishda katta tajribaga ega bo'lgan mutaxassislarni jalb qilamiz.",
     "crossplatform": "Crossplatforma",
-     "erp_systems": "ERP sistemalari",
-     "systems_delivery": "Har qanday murakkablikdagi IT tizimlari siz uchun qulay muddatlarda yetkazib beriladi.",
-     "we_provide_design": "Mijozlaringizni chuqur o‘rganish orqali, loyihangiz uchun foydalanuvchilarga qulay UX/UI dizaynini taqdim etamiz.",
-     "web_design": "Veb ilova dizayni",
-     "mobile_design": "Movil ilova dizayni",
-     "start_up_mvp": "Start uplar uchun MVP",
-     "start_up_suppport": "Startap egalari bilan hamkorlikda biz g‘oyalarni minimal resurslar bilan tezroq sinab ko‘rish, kerakli salohiyat bilan kengaytirish va g‘oyani haqiqatga aylantirishga yordam beramiz.",
-     "analayze": "Analiz",
-     "build_test": "Yaratish",
-     "find_investment": "Investitsiya"
+    "erp_systems": "ERP sistemalari",
+    "systems_delivery": "Har qanday murakkablikdagi IT tizimlari siz uchun qulay muddatlarda yetkazib beriladi.",
+    "we_provide_design": "Mijozlaringizni chuqur o‘rganish orqali, loyihangiz uchun foydalanuvchilarga qulay UX/UI dizaynini taqdim etamiz.",
+    "web_design": "Veb ilova dizayni",
+    "mobile_design": "Movil ilova dizayni",
+    "start_up_mvp": "Start uplar uchun MVP",
+    "start_up_suppport": "Startap egalari bilan hamkorlikda biz g‘oyalarni minimal resurslar bilan tezroq sinab ko‘rish, kerakli salohiyat bilan kengaytirish va g‘oyani haqiqatga aylantirishga yordam beramiz.",
+    "analayze": "Analiz",
+    "build_test": "Yaratish",
+    "find_investment": "Investitsiya"
+  },
+  "portfolio": {
+    "our_clients": "Bizning mijozlarimiz",
+    "videostreaming": "Video ko'rsatuvchi",
+    "video_platform_text": "Fikrat Online - Seminarlar, konferensiyalar va video darslar uchun platforma",
+    "we_developed": "Biz ishlab chiqdik",
+    "website": "Veb-sayt",
+    "web_design": "Veb-dizayn"
   }
 }

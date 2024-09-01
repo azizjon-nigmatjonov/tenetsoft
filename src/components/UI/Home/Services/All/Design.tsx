@@ -15,30 +15,30 @@ export const DesignDevelopement = ({ element = {} }: { element: any }) => {
         <div>
           <p className="sm:text-xl mt-5 sm:mt-10 leading-[30px] sm:leading-[35px] sm:pr-20">{t("we_provide_design")}</p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 mt-10">
             <div className="w-full card-shadow rounded-[8px] p-4">
               <UXIcon />
-              <h3 className="font-semibold mt-3">UX</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">UX</h3>
             </div>
             <div className="w-full card-shadow rounded-[8px] p-4">
               <DesingUIIcon />
-              <h3 className="font-semibold mt-3">UI</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">UI</h3>
             </div>
             <div className="w-full card-shadow rounded-[8px] p-4">
               <PhoneIcon />
-              <h3 className="font-semibold mt-3">{t("mobile_design")}</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">{t("mobile_design")}</h3>
             </div>
             <div className="w-full card-shadow rounded-[8px] p-4">
               <DesktopIcon />
-              <h3 className="font-semibold mt-3">{t("web_design")}</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">{t("web_design")}</h3>
             </div>
             <div className="w-full card-shadow rounded-[8px] p-4">
               <ProtoTypeIcon />
-              <h3 className="font-semibold mt-3">Prototyping</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">Prototyping</h3>
             </div>
             <div className="w-full card-shadow rounded-[8px] p-4">
               <AtomicIcon />
-              <h3 className="font-semibold mt-3">Atomic Design</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">Atomic Design</h3>
             </div>
           </div>
         </div>

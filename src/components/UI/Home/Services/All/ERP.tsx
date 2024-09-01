@@ -23,30 +23,30 @@ export const ERPDevelopement = ({ element = {} }: { element: any }) => {
             {t("systems_delivery")}
           </p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 mt-10">
             <div className="w-full card-shadow rounded-[8px] p-4">
               <CrmIcon />
-              <h3 className="font-semibold mt-3">CRM</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">CRM</h3>
             </div>
             <div className="w-full card-shadow rounded-[8px] p-4">
               <WhareHouseIcon />
-              <h3 className="font-semibold mt-3">Wherehouse</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">Wherehouse</h3>
             </div>
             <div className="w-full card-shadow rounded-[8px] p-4">
               <ELearningIcon />
-              <h3 className="font-semibold mt-3">E-Learning</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">E-Learning</h3>
             </div>
             <div className="w-full card-shadow rounded-[8px] p-4">
               <EcomerseIcon />
-              <h3 className="font-semibold mt-3">E-Commerce</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">E-Commerce</h3>
             </div>
             <div className="w-full card-shadow rounded-[8px] p-4">
               <ListIcon />
-              <h3 className="font-semibold mt-3">Pos system</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">Pos system</h3>
             </div>
             <div className="w-full card-shadow rounded-[8px] p-4">
               <EmailIcon />
-              <h3 className="font-semibold mt-3">Sms / Email</h3>
+              <h3 className="font-semibold mt-3 text-[var(--primary)]">Sms / Email</h3>
             </div>
           </div>
         </div>

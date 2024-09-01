@@ -13,6 +13,7 @@ import { OurValues } from "./OurValues";
 import SEO from "@/components/CElements/SEO";
 // import { TeamMembers } from "./TeamMembers";
 import { ServicesAllInOne } from "./Services/All";
+import { PrortfolioSection } from "./Portfolio";
 
 const HomePage = () => {
   const ContactRef: any = useRef(null);
@@ -41,17 +42,13 @@ const HomePage = () => {
 
       <ServicesAllInOne />
 
-      {/* <Reputation /> */}
-
       <Feedback />
+
+      <PrortfolioSection />
 
       <OurValues />
 
       <ContactUI ContactRef={ContactRef} />
-
-
-      {/* <TeamMembers /> */}
-      {/* <OurStaff /> */}
 
       <FooterUI />
     </>
