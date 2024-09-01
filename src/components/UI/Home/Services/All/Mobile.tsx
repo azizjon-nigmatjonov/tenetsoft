@@ -15,15 +15,15 @@ export const MobileDevelopement = ({ element = {} }: { element: any }) => {
           <p className="sm:text-xl mt-5 sm:mt-10 leading-[30px] sm:leading-[35px] sm:pr-20">{t("we_build_mobile")}</p>
 
           <div className="grid sm:grid-cols-3 gap-5 mt-10">
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <AppleIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">iOS</h3>
             </div>
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <AndroidIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">Android</h3>
             </div>
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <CrossPlatformIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">{t("crossplatform")}</h3>
             </div>

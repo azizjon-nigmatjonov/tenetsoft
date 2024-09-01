@@ -1,4 +1,4 @@
-import { CrmIcon, EcomerseIcon, ELearningIcon, EmailIcon, ListIcon, WhareHouseIcon } from "@/components/UI/Icons";
+import { CrmIcon, EcomerseIcon, ELearningIcon, EmailIcon, ListIcon, WhereHouseIcon } from "@/components/UI/Icons";
 import { useTranslation } from "react-i18next";
 
 export const ERPDevelopement = ({ element = {} }: { element: any }) => {
@@ -24,27 +24,27 @@ export const ERPDevelopement = ({ element = {} }: { element: any }) => {
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 mt-10">
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <CrmIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">CRM</h3>
             </div>
-            <div className="w-full card-shadow rounded-[8px] p-4">
-              <WhareHouseIcon />
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
+              <WhereHouseIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">Wherehouse</h3>
             </div>
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <ELearningIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">E-Learning</h3>
             </div>
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <EcomerseIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">E-Commerce</h3>
             </div>
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <ListIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">Pos system</h3>
             </div>
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <EmailIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">Sms / Email</h3>
             </div>

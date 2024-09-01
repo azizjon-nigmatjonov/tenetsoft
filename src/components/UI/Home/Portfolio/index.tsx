@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { FikratPlatform } from "./Fikrat";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { AbizPlatform } from "./Abiz";
 
 export const PrortfolioSection = () => {
   const { t } = useTranslation("portfolio");
@@ -18,7 +19,6 @@ export const PrortfolioSection = () => {
         setData({ ...data, isLoading: false });
       });
   }, []);
-  console.log('data', data);
   
   return (
     <div className="container">
@@ -27,8 +27,9 @@ export const PrortfolioSection = () => {
           {t("our_clients")}
         </h2>
 
-        <div className="space-y-20 mt-10 sm:mt-20">
+        <div className="space-y-40 mt-10 sm:mt-20">
           <FikratPlatform element={data.list.fikrat} />
+          <AbizPlatform element={data.list.abiz} />
         </div>
       </div>
     </div>

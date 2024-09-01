@@ -16,27 +16,27 @@ export const DesignDevelopement = ({ element = {} }: { element: any }) => {
           <p className="sm:text-xl mt-5 sm:mt-10 leading-[30px] sm:leading-[35px] sm:pr-20">{t("we_provide_design")}</p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 mt-10">
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <UXIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">UX</h3>
             </div>
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <DesingUIIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">UI</h3>
             </div>
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <PhoneIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">{t("mobile_design")}</h3>
             </div>
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <DesktopIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">{t("web_design")}</h3>
             </div>
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <ProtoTypeIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">Prototyping</h3>
             </div>
-            <div className="w-full card-shadow rounded-[8px] p-4">
+            <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
               <AtomicIcon />
               <h3 className="font-semibold mt-3 text-[var(--primary)]">Atomic Design</h3>
             </div>

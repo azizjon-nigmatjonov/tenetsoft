@@ -17,7 +17,7 @@ export const FikratPlatform = ({ element }: { element: any }) => {
         <h3 className="service-title" style={{ color: "#ffb800" }}>
           fikrat.online
         </h3>
-        <div className="bg-[#ffb80019] rounded-full px-4 py-2 inline-flex space-x-3 mt-5">
+        <div className="bg-[#ffb80011] rounded-full px-4 py-2 inline-flex space-x-3 mt-5">
           <VideoCameraIcon />
           <p className="text-[#ffb800]">{t("videostreaming")}</p>
         </div>
@@ -28,19 +28,19 @@ export const FikratPlatform = ({ element }: { element: any }) => {
           {t("we_developed")}:
         </h3>
         <div className="grid sm:grid-cols-3 gap-5 mt-5">
-          <div className="w-full card-shadow rounded-[8px] p-4">
+          <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
             <WebIcon />
             <h3 className="font-semibold mt-3 text-[var(--primary)]">
               {t("website")}
             </h3>
           </div>
-          <div className="w-full card-shadow rounded-[8px] p-4">
+          <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
             <DesktopIcon />
             <h3 className="font-semibold mt-3 text-[var(--primary)]">
               {t("web_design")}
             </h3>
           </div>
-          <div className="w-full card-shadow rounded-[8px] p-4">
+          <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
             <AdminPanelIcon />
             <h3 className="font-semibold mt-3 text-[var(--primary)]">
               {t("admin_panel")}
