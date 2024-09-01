@@ -4,7 +4,6 @@ import {
   DesktopIcon,
   EcomerseIcon,
   PhoneIcon,
-  WebIcon,
   WhereHouseIcon,
 } from "../../Icons";
 
@@ -58,7 +57,7 @@ export const AbizPlatform = ({ element }: { element: any }) => {
             </h3>
           </div>
           <div className="w-full card-shadow rounded-[8px] p-4 bg-white">
-            <DesktopIcon />
+            <PhoneIcon />
             <h3 className="font-semibold mt-3 text-[var(--primary)]">
               {t("mobile_design")}
             </h3>
