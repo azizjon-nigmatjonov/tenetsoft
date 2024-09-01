@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { VideoCameraIcon } from "../../IconPicker/Icons";
+import { AdminPanelIcon, VideoCameraIcon } from "../../IconPicker/Icons";
 import { DesktopIcon, WebIcon } from "../../Icons";
 
 export const FikratPlatform = ({ element }: { element: any }) => {
@@ -38,6 +38,12 @@ export const FikratPlatform = ({ element }: { element: any }) => {
             <DesktopIcon />
             <h3 className="font-semibold mt-3 text-[var(--primary)]">
               {t("web_design")}
+            </h3>
+          </div>
+          <div className="w-full card-shadow rounded-[8px] p-4">
+            <AdminPanelIcon />
+            <h3 className="font-semibold mt-3 text-[var(--primary)]">
+              {t("admin_panel")}
             </h3>
           </div>
         </div>
