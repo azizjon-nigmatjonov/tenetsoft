@@ -8,26 +8,26 @@ export const FikratPlatform = ({ element }: { element: any }) => {
     <div className="grid lg:grid-cols-2 gap-10 sm:gap-20">
       <div>
         <img
-          className="rounded-[32px]"
+          className="rounded-[32px] md:scale-[1.3]"
           src={element?.image}
           alt={element?.name ?? element?.image}
         />
       </div>
       <div>
         <h3 className="service-title" style={{ color: "#ffb800" }}>
-          Fikrat
+          fikrat.online
         </h3>
         <div className="bg-[#ffb80019] rounded-full px-4 py-2 inline-flex space-x-3 mt-5">
           <VideoCameraIcon />
           <p className="text-[#ffb800]">{t("videostreaming")}</p>
         </div>
         <p className="sm:text-xl mt-5 sm:mt-8 leading-[30px] sm:leading-[35px] font-medium">
-          {t("video_platform_text")}
+          {t("video_platform_text")}.
         </p>
-        <h3 className="text-2xl text-[var(--primary)] font-medium mt-8">
+        <h3 className="text-2xl text-[var(--black)] font-semibold mt-10">
           {t("we_developed")}:
         </h3>
-        <div className="grid sm:grid-cols-3 gap-5 mt-10">
+        <div className="grid sm:grid-cols-3 gap-5 mt-5">
           <div className="w-full card-shadow rounded-[8px] p-4">
             <WebIcon />
             <h3 className="font-semibold mt-3 text-[var(--primary)]">
