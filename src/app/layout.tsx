@@ -1,4 +1,4 @@
-"use client";
+"use client"; // Add this directive at the top of the file
 
 import * as React from "react";
 import { ThemeProvider } from "@mui/material/styles";

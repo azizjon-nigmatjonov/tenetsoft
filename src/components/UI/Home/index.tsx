@@ -1,53 +1,46 @@
 "use client";
-import { useRef } from "react";
-import { ContactUI } from "../Contact";
-import { FooterUI } from "../Footer";
+import { CDriver } from "@/components/CElements/CDivider";
 import Header from "../Header";
-import { Banner } from "./Banner";
-import { Reputation } from "./Reputation";
-import { Services } from "./Services";
-import { Team } from "./Team";
-import { Feedback } from "./Feedback";
-import { OurValues } from "./OurValues";
-import { useScreenSize } from "@/hooks/useMobile";
+import HomeBanner from "./Banner";
+import { HomeCategories } from "./Categories";
+import { HomeDiscounts } from "./Discounts";
+import { Products } from "./Products";
+import { FooterUI } from "../Footer";
+import { TabBar } from "../TabBar";
 
 const HomePage = () => {
-  const ContactRef: any = useRef(null);
-  const isMobile: any = useScreenSize("mobile");
+  // const ContactRef: any = useRef(null);
 
-  const handleScroll = (position: string) => {
-    if (position === "contact") {
-      const element = ContactRef.current.getBoundingClientRect();
+  // const handleScroll = (position: string) => {
+  //   if (position === "contact") {
+  //     const element = ContactRef.current.getBoundingClientRect();
 
-      window.scrollTo({
-        top: element.top - 100,
-        behavior: "smooth",
-      });
-    }
-  };
+  //     window.scrollTo({
+  //       top: element.top - 100,
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // };
 
   return (
-    <>
+    <div className="home_page">
       <Header />
 
-      <Banner handleScroll={handleScroll} />
+      <HomeBanner />
 
-      <Reputation />
+      <HomeCategories />
 
-      <Team />
+      <CDriver direction="horizantal" classes="my-3 py-1" />
 
-      <Services />
+      <HomeDiscounts />
 
-      <Feedback />
+      <CDriver direction="horizantal" classes="my-3 py-1" />
 
-      <OurValues />
+      <Products />
 
-      <ContactUI ContactRef={ContactRef} />
-
-      {/* <OurStaff /> */}
-
-      <FooterUI />
-    </>
+      <TabBar />
+      {/* <FooterUI /> */}
+    </div>
   );
 };
 

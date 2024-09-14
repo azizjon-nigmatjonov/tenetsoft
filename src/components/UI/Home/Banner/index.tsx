@@ -1,30 +1,19 @@
-interface Props {
-  handleScroll: (val: string) => void;
-}
+"use client";
 
-export const Banner = ({ handleScroll }: Props) => {
+import { SwiperWrapper } from "../../SwiperWrapper";
+
+const HomeBanner = () => {
   return (
     <div className="container">
-      <div className="pt-[150px] md:pt-[190px] pb-[170px] md:pb-[210px] flex items-center justify-between lg:px-20 text-center sm:text-left">
-        <div>
-          <h1 className="text-[45px] font-semibold leading-[60px]">
-            IT-Outsourcing Company
-          </h1>
-          <h2 className="text-3xl mt-2">
-            Your partner in inovative IT solutions{" "}
-            <br className="hidden md:block" /> for growth and success
-          </h2>
-          <button
-            className="submit-btn mt-10 text-2xl"
-            onClick={() => handleScroll("contact")}
-          >
-            Contact us
-          </button>
-        </div>
-        <div className="h-[50vh] hidden md:block">
-          <img src="/images/web.jpg" alt="company" className="h-full" />
-        </div>
-      </div>
+      <SwiperWrapper
+        swiperList={[
+          { image: "https://images.remotehub.com/512bf05e9a7a11ebac3a9a0aaf11a20e/original_thumb/0a026a71.jpg?version=1618113595", name: "1" },
+          { image: "https://images.remotehub.com/512bf05e9a7a11ebac3a9a0aaf11a20e/original_thumb/0a026a71.jpg?version=1618113595", name: "2" },
+          { image: "https://images.remotehub.com/512bf05e9a7a11ebac3a9a0aaf11a20e/original_thumb/0a026a71.jpg?version=1618113595", name: "3" },
+        ]}
+      />
     </div>
   );
 };
+
+export default HomeBanner;

@@ -4,12 +4,10 @@ import { initReactI18next } from "react-i18next";
 
 import UZ from "./public/locales/uz/common.json";
 import RU from "./public/locales/ru/common.json";
-import EN from "./public/locales/en/common.json";
 
 const resources = {
   ru: RU,
   uz: UZ,
-  en: EN,
 };
 
 i18n
@@ -17,7 +15,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: "ru",
+    fallbackLng: "uz",
     saveMissing: true,
     react: { useSuspense: true },
   });

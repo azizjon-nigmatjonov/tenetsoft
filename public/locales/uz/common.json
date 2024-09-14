@@ -1,5 +1,7 @@
 {
   "common": {
-    "required_field": "Majburiy maydon"
+    "required_field": "Majburiy maydon",
+    "all_rights_reserved": "Barcha huquqlar himoyalangan",
+    "mebel": "Mebel"
   }
 }
