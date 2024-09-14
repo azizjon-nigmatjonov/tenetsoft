@@ -1,7 +1,14 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { CodeIcon, CrmIcon, DesktopIcon, PhoneIcon, UxIcon, WebIcon } from "../../Icons";
+import {
+  CodeIcon,
+  CrmIcon,
+  DesktopIcon,
+  PhoneIcon,
+  UxIcon,
+  WebIcon,
+} from "../../Icons";
 
 export const Services = () => {
   const { t } = useTranslation("common");

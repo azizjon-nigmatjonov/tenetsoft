@@ -17,3 +17,4 @@ export const globalColors = {
   border: "#E0E3EB",
   main: "#0a244c"
 } as const;
+

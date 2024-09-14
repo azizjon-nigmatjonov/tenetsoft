@@ -11,7 +11,7 @@ import { Feedback } from "./Feedback";
 import { OurValues } from "./OurValues";
 
 import SEO from "@/components/CElements/SEO";
-// import { TeamMembers } from "./TeamMembers";
+import { TeamMembers } from "./TeamMembers";
 import { ServicesAllInOne } from "./Services/All";
 import { PrortfolioSection } from "./Portfolio";
 
@@ -47,6 +47,7 @@ const HomePage = () => {
       <PrortfolioSection />
 
       <OurValues />
+      <TeamMembers />
 
       <ContactUI ContactRef={ContactRef} />
 
